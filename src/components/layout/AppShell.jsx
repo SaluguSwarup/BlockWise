@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppState.jsx';
-import { Icon, LiveClock } from '../common/UI.jsx';
+import { Icon, LiveClock, ApiStatus } from '../common/UI.jsx';
 import { DIVISION } from '../../data/network.js';
 import { REQUEST_STATUS } from '../../data/blockRequests.js';
 import { TICKET_STATUS } from '../../data/tickets.js';
@@ -57,6 +57,8 @@ export default function AppShell({ children }) {
           <span className="pulse-dot" />
           <span>5 source systems connected</span>
         </div>
+
+        <ApiStatus />
 
         <LiveClock />
 

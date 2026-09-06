@@ -20,16 +20,35 @@ app.use(cors({ origin: FRONTEND_ORIGIN }));
 
 const info = { service: 'blockwise-api', version: '0.1.0' };
 
+/** Current time as UTC ISO plus a human-readable IST string. */
+function clock() {
+  const d = new Date();
+  return {
+    epoch: d.getTime(),
+    iso: d.toISOString(),
+    ist: d.toLocaleString('en-IN', {
+      timeZone: 'Asia/Kolkata',
+      dateStyle: 'medium',
+      timeStyle: 'medium',
+    }),
+  };
+}
+
 app.get('/', (_req, res) => {
-  res.json({ status: 'ok', ...info, ts: new Date().toISOString() });
+  res.json({ status: 'ok', ...info, time: clock() });
 });
 
 app.get('/health', (_req, res) => {
-  res.json({ status: 'ok', ...info, ts: new Date().toISOString() });
+  res.json({ status: 'ok', ...info, time: clock() });
 });
 
 app.get('/api/version', (_req, res) => {
   res.json(info);
+});
+
+/** Server time — used by the frontend to prove the API is reachable. */
+app.get('/api/time', (_req, res) => {
+  res.json({ ...info, time: clock() });
 });
 
 /**

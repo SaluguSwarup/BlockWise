@@ -18,3 +18,16 @@ export async function pingBackend() {
     return { ok: false, reason: String(err) };
   }
 }
+
+/** Server time from the backend — returns { epoch, iso, ist } on success. */
+export async function getServerTime() {
+  if (!API_URL) return { ok: false, reason: 'VITE_API_URL not configured' };
+  try {
+    const res = await fetch(`${API_URL}/api/time`);
+    if (!res.ok) return { ok: false, reason: `HTTP ${res.status}` };
+    const body = await res.json();
+    return { ok: true, data: body.time };
+  } catch (err) {
+    return { ok: false, reason: String(err) };
+  }
+}

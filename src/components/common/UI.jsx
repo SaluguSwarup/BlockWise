@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HEALTH_THRESHOLD, healthBand, DEPARTMENTS } from '../../data/tracks.js';
+import { getServerTime } from '../../lib/api.js';
 
 /* ----------------------------------------------------------------- icons */
 
@@ -229,18 +230,60 @@ export function Empty({ children }) {
 }
 
 export function LiveClock() {
-  const [now, setNow] = useState(() => new Date(2026, 8, 6, 9, 46, 0));
+  const [now, setNow] = useState(() => new Date());
   useEffect(() => {
-    const t = setInterval(() => setNow((d) => new Date(d.getTime() + 1000)), 1000);
+    const t = setInterval(() => setNow(new Date()), 1000);
     return () => clearInterval(t);
   }, []);
-  const hh = String(now.getHours()).padStart(2, '0');
-  const mm = String(now.getMinutes()).padStart(2, '0');
-  const ss = String(now.getSeconds()).padStart(2, '0');
+  const [hh, mm, ss] = now
+    .toLocaleTimeString('en-GB', { timeZone: 'Asia/Kolkata', hour12: false })
+    .split(':');
+  const date = now
+    .toLocaleDateString('en-GB', { timeZone: 'Asia/Kolkata', day: '2-digit', month: 'short', year: 'numeric' })
+    .toUpperCase();
   return (
     <div className="top-clock" title="Divisional clock (IST)">
       {hh}:{mm}<span style={{ color: 'var(--text-3)' }}>:{ss}</span>
-      <span style={{ color: 'var(--text-3)', marginLeft: 7, fontSize: 11 }}>06 SEP 2026</span>
+      <span style={{ color: 'var(--text-3)', marginLeft: 7, fontSize: 11 }}>{date}</span>
+    </div>
+  );
+}
+
+/**
+ * Backend connectivity indicator. Polls the API's /api/time every 30s so the
+ * topbar shows whether the Render service is reachable from the browser.
+ */
+export function ApiStatus() {
+  const [state, setState] = useState({ status: 'checking' });
+  useEffect(() => {
+    let alive = true;
+    const check = () => {
+      getServerTime().then((r) => {
+        if (!alive) return;
+        setState(r.ok ? { status: 'online', ist: r.data?.ist } : { status: 'offline', reason: r.reason });
+      });
+    };
+    check();
+    const t = setInterval(check, 30000);
+    return () => { alive = false; clearInterval(t); };
+  }, []);
+
+  const map = {
+    checking: { color: 'var(--text-3)', dot: 'var(--text-3)', label: 'Checking API…' },
+    online: { color: 'var(--text-2)', dot: 'var(--ok)', label: 'API online' },
+    offline: { color: 'var(--crit)', dot: 'var(--crit)', label: 'API offline' },
+  };
+  const s = map[state.status];
+  const title = state.status === 'online'
+    ? `Backend time: ${state.ist || 'n/a'}`
+    : state.status === 'offline'
+      ? `Backend unreachable — ${state.reason || 'unknown error'}`
+      : 'Contacting backend…';
+
+  return (
+    <div className="row gap-6 tiny" style={{ color: s.color }} title={title}>
+      <span className="pulse-dot" style={{ background: s.dot }} />
+      <span>{s.label}</span>
     </div>
   );
 }
