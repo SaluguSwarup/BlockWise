@@ -1,4 +1,4 @@
-# BlockWise
+# BlockWise by Swarup
 
 **Automatic Block Planning System for Indian Railways** — front-end prototype for the Smart India Hackathon 2026 problem statement on coordinated maintenance block planning across the Engineering (ENGG), Signal & Telecommunication (S&T) and Traction Distribution (TRD) departments.
 
