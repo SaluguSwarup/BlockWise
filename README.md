@@ -66,6 +66,45 @@ hand-built SVG/CSS so the visuals stay exactly on the railway-enterprise brief.
 
 ---
 
+## Deployment
+
+Two services, wired together with one environment variable:
+
+| Service | Host | Root | Build | Start / Output |
+|---|---|---|---|---|
+| Frontend (Vite SPA) | **Vercel** | `./` | `npm run build` | output `dist/` |
+| API (`backend/`) | **Render** (Web Service, free) | `backend` | `npm install` | `npm start` |
+
+The frontend still runs the planning engine client-side — `backend/` is a service
+skeleton (health check + a `POST /api/plan` stub) that keeps the two-tier pipeline and
+the integration point in place. See [`backend/README.md`](backend/README.md).
+
+**Config files**
+
+- [`vercel.json`](vercel.json) — SPA rewrite so React Router deep links don't 404.
+- [`render.yaml`](render.yaml) — Render blueprint for the API service.
+- [`.env.example`](.env.example) — `VITE_API_URL` points the frontend at the Render URL.
+
+**Deploy order**
+
+1. **Render** — New → Web Service → import repo → Root Directory `backend`, Build
+   `npm install`, Start `npm start`, Free instance. Add env var `FRONTEND_ORIGIN`
+   (`*` initially). Live URL, e.g. `https://blockwise-api.onrender.com`; check `/health`.
+2. **Vercel** — Add New → Project → import repo → framework auto-detects **Vite**. Add
+   env var `VITE_API_URL` = the Render URL. Deploy.
+3. Back in Render, set `FRONTEND_ORIGIN` to the exact Vercel URL to lock down CORS.
+
+Pushes to `main` auto-redeploy both. Render's free tier sleeps after ~15 min idle; the
+first request then takes ~30–50 s to wake.
+
+**Local backend**
+
+```bash
+cd backend && npm install && npm start   # http://localhost:4000/health
+```
+
+---
+
 ## Roles
 
 The entry screen is a role picker, not a real login — no password, no auth service.
