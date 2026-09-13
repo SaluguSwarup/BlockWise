@@ -25,6 +25,7 @@ integration requires, but each team remains accountable for its own area.
 | `src/App.jsx`, `src/context/AppState.jsx`, `src/pages/`, `src/components/` | **Team B** | The product UI. |
 | `scripts/build-fixtures.mjs` | **Integrator** | Frozen. |
 | `docs/`, `.github/` | **Integrator** | Frozen. |
+| `docs/violations/` | **Every team** | Exception to the row above. Each team may create and append to its own `docs/violations/{FEATURE-ID}-violations.md` to record a necessary cross-boundary or contract exception for that feature — see `workflow.md`. Never edit another team's violation file. |
 
 ## Frozen files (whole week, not just Pre-Day-1)
 
@@ -39,7 +40,7 @@ Only the integrator edits these, and only with all three leads informed:
 - `docs/**`
 
 A pull request that touches a frozen file outside the integrator's own commit is a boundary
-violation — see `workflow.md`.
+violation — see `workflow.md`. (`docs/violations/` is the one exception, per the row above.)
 
 ## Footholds inside another team's area
 

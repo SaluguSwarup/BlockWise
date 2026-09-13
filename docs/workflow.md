@@ -24,6 +24,15 @@ Transcribed from `BlockWise.md` §8, with the repo-specific mechanics filled in.
 
 Do not build on another team's unmerged pull request.
 
+**Recording a necessary boundary or contract exception:** if a feature genuinely requires
+touching a file outside your ownership boundary (`ownership.md`) or a frozen area, make the
+minimum change required and record it in `docs/violations/{FEATURE-ID}-violations.md` (create the
+file if it doesn't exist — this path is the one exception to `docs/` being frozen, see
+`ownership.md`). For each entry, record: the file/area touched, the rule or boundary crossed, what
+changed, why it was necessary, how it relates to the feature, why it couldn't reasonably be
+avoided, and why the change was kept to the minimum scope. Never make the change silently — this
+file is what the integrator reads before deciding whether to merge it as-is.
+
 **Team A and Team C additionally:** if today's features expose an endpoint another team is
 waiting for, say so in the pull request description — that line becomes tonight's
 integration-log entry.

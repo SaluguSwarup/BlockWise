@@ -14,6 +14,9 @@
 /.github/                      @integrator
 /docs/                         @integrator
 
+# Exception: every team may create/append its own violations file (see docs/ownership.md)
+/docs/violations/               @team-a @team-b @team-c @integrator
+
 # Team A — Data & Track Intelligence
 /backend/modules/team-a/       @team-a
 /src/dev/team-a/               @team-a
