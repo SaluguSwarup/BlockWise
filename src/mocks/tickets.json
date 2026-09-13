@@ -1,0 +1,94 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "id": "INS-2026-0341",
+      "section": "SEC-104",
+      "dept": "ENGG",
+      "reason": "Rail fracture / weld failure suspected",
+      "remarks": "Loco pilot of 12312 reported a jerk at approx Km 141/6. Temporary fish plate holding, needs urgent verification.",
+      "urgency": "IMMEDIATE",
+      "status": "INSPECTION SCHEDULED",
+      "raisedBy": "SSE/P.Way/ALJN",
+      "raisedOn": "04 Sep 2026, 06:40",
+      "region": "Aligarh (ALJN) — Sr.DEN/Co",
+      "assignedTo": "ADEN/Aligarh",
+      "outcome": "USFD verification done 04 Sep — rail renewal proposed under BR-0412"
+    },
+    {
+      "id": "INS-2026-0344",
+      "section": "SEC-204",
+      "dept": "TRD",
+      "reason": "OHE arcing / dropper failure",
+      "remarks": "Fourth dropper snapping event in the same stretch. Pantograph hits recorded on 3 services.",
+      "urgency": "IMMEDIATE",
+      "status": "ACKNOWLEDGED",
+      "raisedBy": "JE/TRD/AWR",
+      "raisedOn": "04 Sep 2026, 21:15",
+      "region": "Alwar (AWR) — Sr.DEE/TRD",
+      "assignedTo": "Sr.DEE/TRD Alwar",
+      "outcome": "Linked to block request BR-0436"
+    },
+    {
+      "id": "INS-2026-0347",
+      "section": "SEC-302",
+      "dept": "SNT",
+      "reason": "Signal aspect irregularity",
+      "remarks": "Intermittent blanking of signal S-14. Cable insulation resistance measured below 1 M-ohm.",
+      "urgency": "HIGH",
+      "status": "INSPECTION SCHEDULED",
+      "raisedBy": "SSE/Signal/GJL",
+      "raisedOn": "05 Sep 2026, 09:30",
+      "region": "Gajraula (GJL) — Sr.DSTE",
+      "assignedTo": "Sr.DSTE Moradabad",
+      "outcome": "Cable replacement proposed under BR-0440"
+    },
+    {
+      "id": "INS-2026-0351",
+      "section": "SEC-305",
+      "dept": "ENGG",
+      "reason": "Bridge / structure distress",
+      "remarks": "Bearing displacement noticed during monsoon inspection of Br. 214. Caution order imposed.",
+      "urgency": "HIGH",
+      "status": "OPEN",
+      "raisedBy": "SSE/P.Way/BE",
+      "raisedOn": "06 Sep 2026, 05:55",
+      "region": "Bareilly (BE) — AEN/Bridges",
+      "assignedTo": "AEN/Bridges Bareilly",
+      "outcome": "Awaiting Sr.DEN inspection"
+    },
+    {
+      "id": "INS-2026-0353",
+      "section": "SEC-404",
+      "dept": "TRD",
+      "reason": "OHE arcing / dropper failure",
+      "remarks": "Three loco pilots reported heavy arcing at the neutral section near Km 158/4.",
+      "urgency": "HIGH",
+      "status": "ACKNOWLEDGED",
+      "raisedBy": "SSE/TRD/GWL",
+      "raisedOn": "06 Sep 2026, 07:10",
+      "region": "Gwalior (GWL) — Sr.DEE/TRD",
+      "assignedTo": "Sr.DEE/TRD Gwalior",
+      "outcome": "Linked to block request BR-0455"
+    },
+    {
+      "id": "INS-2026-0356",
+      "section": "SEC-203",
+      "dept": "ENGG",
+      "reason": "Abnormal track geometry observed",
+      "remarks": "Side wear on the high rail noticed during trolley inspection; grinding cycle overdue.",
+      "urgency": "NORMAL",
+      "status": "OPEN",
+      "raisedBy": "SSE/P.Way/RE",
+      "raisedOn": "06 Sep 2026, 08:25",
+      "region": "Rewari (RE) — Sr.DEN/West",
+      "assignedTo": "ADEN/Rewari",
+      "outcome": "Pending assessment"
+    }
+  ],
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

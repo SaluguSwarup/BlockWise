@@ -1,0 +1,4334 @@
+{
+  "ok": true,
+  "data": {
+    "planId": "PLAN-FIXTURE-DAY0",
+    "generatedAt": "2026-09-06T00:00:00.000Z",
+    "engineVersion": "0.1.0-pre-day-1",
+    "scorerStatus": {
+      "implementation": "deterministic-placeholder",
+      "trained": false,
+      "model": null,
+      "version": "placeholder-0.1",
+      "note": "Placeholder for a future ML scorer. Not a trained ML model."
+    },
+    "scores": [
+      {
+        "requestId": "BDMS/2026/BR-0412",
+        "urgency": 92,
+        "criticality": 92,
+        "priority": 92,
+        "band": "CRITICAL",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 100,
+            "contribution": 24,
+            "note": "CRITICAL activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DEN/Co ALJN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 52,
+            "contribution": 7.3,
+            "note": "Section health 48% (deficit 52 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 99,
+            "contribution": 13.9,
+            "note": "Overdue by 22 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 92,
+            "contribution": 11,
+            "note": "92/100 — Removes PSR 60 kmph; restores 130 kmph sectional speed"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0418",
+        "urgency": 70,
+        "criticality": 70,
+        "priority": 70,
+        "band": "HIGH",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEE/TRD TDL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 52,
+            "contribution": 7.3,
+            "note": "Section health 48% (deficit 52 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 27,
+            "contribution": 3.8,
+            "note": "Overdue by 6 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 74,
+            "contribution": 8.9,
+            "note": "74/100 — Eliminates recurring OHE trip risk on UP line"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0423",
+        "urgency": 73,
+        "criticality": 73,
+        "priority": 73,
+        "band": "HIGH",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DSTE ALJN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 52,
+            "contribution": 7.3,
+            "note": "Section health 48% (deficit 52 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 54,
+            "contribution": 7.6,
+            "note": "Overdue by 12 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 68,
+            "contribution": 8.2,
+            "note": "68/100 — Restores full route setting at ALJN south end"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0431",
+        "urgency": 87,
+        "criticality": 87,
+        "priority": 87,
+        "band": "CRITICAL",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 100,
+            "contribution": 24,
+            "note": "CRITICAL activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DEN/West RE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 43,
+            "contribution": 6,
+            "note": "Section health 57% (deficit 43 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 72,
+            "contribution": 10.1,
+            "note": "Overdue by 16 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 88,
+            "contribution": 10.6,
+            "note": "88/100 — Removes PSR 45 kmph over 1.4 km"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0436",
+        "urgency": 77,
+        "criticality": 77,
+        "priority": 77,
+        "band": "HIGH",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DEE/TRD AWR"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 43,
+            "contribution": 6,
+            "note": "Section health 57% (deficit 43 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 50,
+            "contribution": 6.9,
+            "note": "Overdue by 11 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 79,
+            "contribution": 9.5,
+            "note": "79/100 — Prevents OHE breakdown risk on a Rajdhani route"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0440",
+        "urgency": 87,
+        "criticality": 87,
+        "priority": 87,
+        "band": "CRITICAL",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 100,
+            "contribution": 24,
+            "note": "CRITICAL activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DSTE GJL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 36,
+            "contribution": 5,
+            "note": "Section health 64% (deficit 36 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 86,
+            "contribution": 12,
+            "note": "Overdue by 19 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 84,
+            "contribution": 10.1,
+            "note": "84/100 — Removes risk of signal failure / wrong-side failure"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0444",
+        "urgency": 45,
+        "criticality": 45,
+        "priority": 45,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/P.Way/GJL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 36,
+            "contribution": 5,
+            "note": "Section health 64% (deficit 36 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 18,
+            "contribution": 2.5,
+            "note": "Overdue by 4 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 52,
+            "contribution": 6.2,
+            "note": "52/100 — Improves track stability, arrests TQI deterioration"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0447",
+        "urgency": 54,
+        "criticality": 54,
+        "priority": 54,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEN/West RE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 29,
+            "contribution": 4.1,
+            "note": "Section health 71% (deficit 29 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 41,
+            "contribution": 5.7,
+            "note": "Overdue by 9 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 61,
+            "contribution": 7.3,
+            "note": "61/100 — Extends rail service life by an estimated 4 years"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0452",
+        "urgency": 43,
+        "criticality": 43,
+        "priority": 43,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by Sr.DEE/TRD RE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 29,
+            "contribution": 4.1,
+            "note": "Section health 71% (deficit 29 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 57,
+            "contribution": 6.8,
+            "note": "57/100 — Avoids unplanned OHE failure on goods corridor"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0455",
+        "urgency": 68,
+        "criticality": 68,
+        "priority": 68,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEE/TRD GWL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 31,
+            "contribution": 4.3,
+            "note": "Section health 69% (deficit 31 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 36,
+            "contribution": 5,
+            "note": "Overdue by 8 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 76,
+            "contribution": 9.1,
+            "note": "76/100 — Eliminates arcing risk on Delhi–Chennai trunk route"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0459",
+        "urgency": 37,
+        "criticality": 37,
+        "priority": 37,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/P.Way/GWL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 30,
+            "contribution": 4.8,
+            "note": "LOW safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 31,
+            "contribution": 4.3,
+            "note": "Section health 69% (deficit 31 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 48,
+            "contribution": 5.8,
+            "note": "48/100 — Improves drainage before the next monsoon cycle"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0463",
+        "urgency": 50,
+        "criticality": 50,
+        "priority": 50,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by Sr.DSTE GGN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 21,
+            "contribution": 2.9,
+            "note": "Section health 79% (deficit 21 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 14,
+            "contribution": 1.9,
+            "note": "Overdue by 3 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 55,
+            "contribution": 6.6,
+            "note": "55/100 — Level crossing safety compliance (Sch. of Dimensions)"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0466",
+        "urgency": 40,
+        "criticality": 40,
+        "priority": 40,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/P.Way/GGN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 21,
+            "contribution": 2.9,
+            "note": "Section health 79% (deficit 21 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 46,
+            "contribution": 5.5,
+            "note": "46/100 — Reduces road-user risk and shock loading on track"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0470",
+        "urgency": 62,
+        "criticality": 62,
+        "priority": 62,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEN/Co GZB"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 26,
+            "contribution": 3.6,
+            "note": "Section health 74% (deficit 26 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 71,
+            "contribution": 8.5,
+            "note": "71/100 — Prevents rail fracture on the highest-density section"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0474",
+        "urgency": 63,
+        "criticality": 63,
+        "priority": 63,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by AEN/Bridges BE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 28,
+            "contribution": 3.9,
+            "note": "Section health 72% (deficit 28 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 80,
+            "contribution": 9.6,
+            "note": "80/100 — Removes 30 kmph caution order over the bridge"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0478",
+        "urgency": 33,
+        "criticality": 33,
+        "priority": 33,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 28,
+            "contribution": 6.7,
+            "note": "LOW activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/Signal/MB"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 24,
+            "contribution": 3.4,
+            "note": "Section health 76% (deficit 24 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 34,
+            "contribution": 4.1,
+            "note": "34/100 — Routine preventive maintenance"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0481",
+        "urgency": 60,
+        "criticality": 60,
+        "priority": 60,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEN/Co AGC"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 47,
+            "contribution": 6.6,
+            "note": "Section health 53% (deficit 47 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 83,
+            "contribution": 10,
+            "note": "83/100 — Completes the Br. 88 restoration package"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0484",
+        "urgency": 22,
+        "criticality": 22,
+        "priority": 22,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 28,
+            "contribution": 6.7,
+            "note": "LOW activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 24,
+            "contribution": 4.8,
+            "note": "PLANNED — raised by SSE/P.Way/NDLS"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 30,
+            "contribution": 4.8,
+            "note": "LOW safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 12,
+            "contribution": 1.7,
+            "note": "Section health 88% (deficit 12 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 30,
+            "contribution": 3.6,
+            "note": "30/100 — Preventive — section already in the Very Good TQI band"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      },
+      {
+        "requestId": "BDMS/2026/BR-0487",
+        "urgency": 22,
+        "criticality": 22,
+        "priority": 22,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 28,
+            "contribution": 6.7,
+            "note": "LOW activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 24,
+            "contribution": 4.8,
+            "note": "PLANNED — raised by SSE/P.Way/ETW"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 30,
+            "contribution": 4.8,
+            "note": "LOW safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 17,
+            "contribution": 2.4,
+            "note": "Section health 83% (deficit 17 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 28,
+            "contribution": 3.4,
+            "note": "28/100 — Preventive maintenance within tolerance"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    ],
+    "unscored": [],
+    "blocks": [
+      {
+        "id": "BLK-AI-001",
+        "date": "2026-09-12",
+        "section": "SEC-104",
+        "sectionName": "Aligarh Jn - Tundla Jn",
+        "corridor": "GC-1",
+        "start": "01:45",
+        "end": "04:50",
+        "durationMin": 185,
+        "serialMin": 330,
+        "savedMin": 145,
+        "depts": [
+          "ENGG",
+          "TRD",
+          "SNT"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "Through rail renewal — 380 m",
+            "requestId": "BDMS/2026/BR-0412",
+            "durationMin": 165,
+            "score": 92,
+            "band": "CRITICAL"
+          },
+          {
+            "dept": "TRD",
+            "activity": "OHE insulator replacement — mast 141/12",
+            "requestId": "BDMS/2026/BR-0418",
+            "durationMin": 90,
+            "score": 70,
+            "band": "HIGH"
+          },
+          {
+            "dept": "SNT",
+            "activity": "Point machine 24A overhaul",
+            "requestId": "BDMS/2026/BR-0423",
+            "durationMin": 75,
+            "score": 73,
+            "band": "HIGH"
+          }
+        ],
+        "priority": "CRITICAL",
+        "priorityScore": 92,
+        "leadRequestId": "BDMS/2026/BR-0412",
+        "trains": {
+          "express": 0,
+          "passenger": 1,
+          "goods": 2
+        },
+        "trainsAffected": 3,
+        "baselineTrainsAffected": 4,
+        "assetHealth": 48,
+        "assetAvailability": 81.4,
+        "window": {
+          "id": "W-A",
+          "start": "01:45",
+          "end": "05:00",
+          "passenger": 2,
+          "express": 1,
+          "goods": 4,
+          "densityIndex": 14,
+          "coa": "Available",
+          "note": "Preferred slot — only Sangam Exp path to regulate",
+          "section": "SEC-104",
+          "date": "2026-09-12",
+          "sectionId": "SEC-104",
+          "capacityMin": 195,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 1,
+            "goods": 2
+          },
+          "trains": [
+            {
+              "no": "64551",
+              "name": "ALJN–TDL MEMU",
+              "type": "PASSENGER",
+              "time": "04:45",
+              "dir": "DN",
+              "halts": "All stations"
+            },
+            {
+              "no": "GDS-4412",
+              "name": "BOXN Coal Rake",
+              "type": "GOODS",
+              "time": "02:10",
+              "dir": "DN",
+              "halts": "Loop at KRJ"
+            },
+            {
+              "no": "GDS-4418",
+              "name": "Container Rake",
+              "type": "GOODS",
+              "time": "03:35",
+              "dir": "UP",
+              "halts": "Runs through"
+            }
+          ],
+          "trafficLoad": 6,
+          "disruption": 26,
+          "trainsAffected": 3
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:45",
+            "end": "05:00",
+            "passenger": 2,
+            "express": 1,
+            "goods": 4,
+            "densityIndex": 14,
+            "coa": "Available",
+            "note": "Preferred slot — only Sangam Exp path to regulate",
+            "section": "SEC-104",
+            "date": "2026-09-12",
+            "sectionId": "SEC-104",
+            "capacityMin": 195,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 1,
+              "goods": 2
+            },
+            "trains": [
+              {
+                "no": "64551",
+                "name": "ALJN–TDL MEMU",
+                "type": "PASSENGER",
+                "time": "04:45",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-4412",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:10",
+                "dir": "DN",
+                "halts": "Loop at KRJ"
+              },
+              {
+                "no": "GDS-4418",
+                "name": "Container Rake",
+                "type": "GOODS",
+                "time": "03:35",
+                "dir": "UP",
+                "halts": "Runs through"
+              }
+            ],
+            "trafficLoad": 6,
+            "disruption": 26,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-B",
+            "start": "23:15",
+            "end": "01:15",
+            "passenger": 0,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 35,
+            "coa": "Available",
+            "note": "Rajdhani + Kalka Mail paths — high priority trains",
+            "section": "SEC-104",
+            "date": "2026-09-12",
+            "sectionId": "SEC-104",
+            "capacityMin": 120,
+            "fits": false,
+            "counts": {
+              "express": 3,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12310",
+                "name": "Rajdhani Express",
+                "type": "EXPRESS",
+                "time": "23:40",
+                "dir": "UP",
+                "halts": "Runs through"
+              },
+              {
+                "no": "12312",
+                "name": "Kalka Mail",
+                "type": "EXPRESS",
+                "time": "00:25",
+                "dir": "UP",
+                "halts": "TDL 5 min"
+              },
+              {
+                "no": "14163",
+                "name": "Sangam Express",
+                "type": "EXPRESS",
+                "time": "01:05",
+                "dir": "DN",
+                "halts": "ALJN 3 min"
+              }
+            ],
+            "trafficLoad": 12,
+            "disruption": 119,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-C",
+            "start": "04:30",
+            "end": "06:30",
+            "passenger": 4,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 44,
+            "coa": "Restricted",
+            "note": "MEMU 64551/64554 + morning express load",
+            "section": "SEC-104",
+            "date": "2026-09-12",
+            "sectionId": "SEC-104",
+            "capacityMin": 120,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 2,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12002",
+                "name": "Bhopal Shatabdi",
+                "type": "EXPRESS",
+                "time": "06:15",
+                "dir": "DN",
+                "halts": "Runs through"
+              },
+              {
+                "no": "64551",
+                "name": "ALJN–TDL MEMU",
+                "type": "PASSENGER",
+                "time": "04:45",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "64554",
+                "name": "TDL–ALJN MEMU",
+                "type": "PASSENGER",
+                "time": "05:20",
+                "dir": "UP",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-4425",
+                "name": "BCN Cement Rake",
+                "type": "GOODS",
+                "time": "05:05",
+                "dir": "DN",
+                "halts": "Loop at ALJN"
+              }
+            ],
+            "trafficLoad": 11.5,
+            "disruption": 145,
+            "trainsAffected": 4
+          },
+          {
+            "id": "W-D",
+            "start": "13:00",
+            "end": "15:00",
+            "passenger": 3,
+            "express": 4,
+            "goods": 1,
+            "densityIndex": 51,
+            "coa": "Not preferred",
+            "note": "Diversion via Kasganj required — not economical",
+            "section": "SEC-104",
+            "date": "2026-09-12",
+            "sectionId": "SEC-104",
+            "capacityMin": 120,
+            "fits": false,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 151,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "MERGE",
+            "text": "3 departmental requests on SEC-104 for 12 Sep 2026 are compatible and have been merged into a single corridor block. Serial working would have needed 5.5 hr; coordinated working needs 3.1 hr."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0412 (ENGG) with a priority score of 92/100 — CRITICAL criticality, IMMEDIATE urgency, section health 48%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:45–05:00 selected from 4 Control Office windows: lowest operational disruption index (26) with 3 train paths in the window. Preferred slot — only Sangam Exp path to regulate"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 23:15–01:15 rejected — disruption index 119 (3 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for GC-1: 11 rakes/night (46,200 T), peak 02:00 – 04:00. 2 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": true,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Moderate — goods rakes to be looped",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-002",
+        "date": "2026-09-13",
+        "section": "SEC-204",
+        "sectionName": "Rewari Jn - Alwar Jn",
+        "corridor": "NW-2",
+        "start": "00:15",
+        "end": "03:25",
+        "durationMin": 190,
+        "serialMin": 270,
+        "savedMin": 80,
+        "depts": [
+          "ENGG",
+          "TRD"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "Weld renewal + through tamping",
+            "requestId": "BDMS/2026/BR-0431",
+            "durationMin": 180,
+            "score": 87,
+            "band": "CRITICAL"
+          },
+          {
+            "dept": "TRD",
+            "activity": "OHE dropper renewal — 1.2 km",
+            "requestId": "BDMS/2026/BR-0436",
+            "durationMin": 90,
+            "score": 77,
+            "band": "HIGH"
+          }
+        ],
+        "priority": "CRITICAL",
+        "priorityScore": 87,
+        "leadRequestId": "BDMS/2026/BR-0431",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 2
+        },
+        "trainsAffected": 2,
+        "baselineTrainsAffected": 3,
+        "assetHealth": 57,
+        "assetAvailability": 84.2,
+        "window": {
+          "id": "W-A",
+          "start": "00:15",
+          "end": "04:00",
+          "passenger": 1,
+          "express": 1,
+          "goods": 5,
+          "densityIndex": 18,
+          "coa": "Available",
+          "note": "Freight-dominant window — goods regulation possible",
+          "section": "SEC-204",
+          "date": "2026-09-13",
+          "sectionId": "SEC-204",
+          "capacityMin": 225,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 2
+          },
+          "trains": [
+            {
+              "no": "GDS-6620",
+              "name": "BTPN Tank Rake",
+              "type": "GOODS",
+              "time": "01:20",
+              "dir": "DN",
+              "halts": "Loop at RE"
+            },
+            {
+              "no": "GDS-6631",
+              "name": "DFC Feeder Container",
+              "type": "GOODS",
+              "time": "02:45",
+              "dir": "UP",
+              "halts": "Runs through"
+            }
+          ],
+          "trafficLoad": 3,
+          "disruption": 24,
+          "trainsAffected": 2
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "00:15",
+            "end": "04:00",
+            "passenger": 1,
+            "express": 1,
+            "goods": 5,
+            "densityIndex": 18,
+            "coa": "Available",
+            "note": "Freight-dominant window — goods regulation possible",
+            "section": "SEC-204",
+            "date": "2026-09-13",
+            "sectionId": "SEC-204",
+            "capacityMin": 225,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 2
+            },
+            "trains": [
+              {
+                "no": "GDS-6620",
+                "name": "BTPN Tank Rake",
+                "type": "GOODS",
+                "time": "01:20",
+                "dir": "DN",
+                "halts": "Loop at RE"
+              },
+              {
+                "no": "GDS-6631",
+                "name": "DFC Feeder Container",
+                "type": "GOODS",
+                "time": "02:45",
+                "dir": "UP",
+                "halts": "Runs through"
+              }
+            ],
+            "trafficLoad": 3,
+            "disruption": 24,
+            "trainsAffected": 2
+          },
+          {
+            "id": "W-B",
+            "start": "22:30",
+            "end": "00:30",
+            "passenger": 0,
+            "express": 2,
+            "goods": 4,
+            "densityIndex": 29,
+            "coa": "Available",
+            "note": "Swarna Jayanti Rajdhani path to be protected",
+            "section": "SEC-204",
+            "date": "2026-09-13",
+            "sectionId": "SEC-204",
+            "capacityMin": 120,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12958",
+                "name": "Swarna Jayanti Rajdhani",
+                "type": "EXPRESS",
+                "time": "23:10",
+                "dir": "DN",
+                "halts": "Runs through"
+              }
+            ],
+            "trafficLoad": 4,
+            "disruption": 97,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-C",
+            "start": "03:30",
+            "end": "06:00",
+            "passenger": 3,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 38,
+            "coa": "Restricted",
+            "note": "Aravali + Shatabdi paths",
+            "section": "SEC-204",
+            "date": "2026-09-13",
+            "sectionId": "SEC-204",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 1,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "19708",
+                "name": "Aravali Express",
+                "type": "EXPRESS",
+                "time": "03:50",
+                "dir": "UP",
+                "halts": "RE 5 min"
+              },
+              {
+                "no": "54413",
+                "name": "Rewari–Alwar Passenger",
+                "type": "PASSENGER",
+                "time": "05:40",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-6640",
+                "name": "BOXN Stone Rake",
+                "type": "GOODS",
+                "time": "04:15",
+                "dir": "DN",
+                "halts": "Loop at AWR"
+              }
+            ],
+            "trafficLoad": 8.5,
+            "disruption": 133,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-D",
+            "start": "11:00",
+            "end": "13:30",
+            "passenger": 2,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 44,
+            "coa": "Not preferred",
+            "note": "Daytime goods loading peak at Rewari",
+            "section": "SEC-204",
+            "date": "2026-09-13",
+            "sectionId": "SEC-204",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 144,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "MERGE",
+            "text": "2 departmental requests on SEC-204 for 13 Sep 2026 are compatible and have been merged into a single corridor block. Serial working would have needed 4.5 hr; coordinated working needs 3.2 hr."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0431 (ENGG) with a priority score of 87/100 — CRITICAL criticality, IMMEDIATE urgency, section health 57%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 00:15–04:00 selected from 4 Control Office windows: lowest operational disruption index (24) with 2 train paths in the window. Freight-dominant window — goods regulation possible"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 22:30–00:30 rejected — disruption index 97 (1 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for NW-2: 14 rakes/night (58,800 T), peak 00:30 – 03:00. 2 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": true,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-003",
+        "date": "2026-09-14",
+        "section": "SEC-302",
+        "sectionName": "Hapur Jn - Gajraula Jn",
+        "corridor": "NE-3",
+        "start": "01:00",
+        "end": "03:40",
+        "durationMin": 160,
+        "serialMin": 225,
+        "savedMin": 65,
+        "depts": [
+          "ENGG",
+          "SNT"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "ERC fastening renewal — 2.4 km",
+            "requestId": "BDMS/2026/BR-0444",
+            "durationMin": 75,
+            "score": 45,
+            "band": "LOW"
+          },
+          {
+            "dept": "SNT",
+            "activity": "Signal cable replacement — 800 m",
+            "requestId": "BDMS/2026/BR-0440",
+            "durationMin": 150,
+            "score": 87,
+            "band": "CRITICAL"
+          }
+        ],
+        "priority": "CRITICAL",
+        "priorityScore": 87,
+        "leadRequestId": "BDMS/2026/BR-0440",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 1,
+        "baselineTrainsAffected": 2,
+        "assetHealth": 64,
+        "assetAvailability": 89.4,
+        "window": {
+          "id": "W-A",
+          "start": "01:00",
+          "end": "04:00",
+          "passenger": 1,
+          "express": 1,
+          "goods": 3,
+          "densityIndex": 12,
+          "coa": "Available",
+          "note": "Lowest-density corridor slot in the division",
+          "section": "SEC-302",
+          "date": "2026-09-14",
+          "sectionId": "SEC-302",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "GDS-7712",
+              "name": "BCN Foodgrain Rake",
+              "type": "GOODS",
+              "time": "02:25",
+              "dir": "DN",
+              "halts": "Loop at HPU"
+            }
+          ],
+          "trafficLoad": 1.5,
+          "disruption": 15,
+          "trainsAffected": 1
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:00",
+            "end": "04:00",
+            "passenger": 1,
+            "express": 1,
+            "goods": 3,
+            "densityIndex": 12,
+            "coa": "Available",
+            "note": "Lowest-density corridor slot in the division",
+            "section": "SEC-302",
+            "date": "2026-09-14",
+            "sectionId": "SEC-302",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "GDS-7712",
+                "name": "BCN Foodgrain Rake",
+                "type": "GOODS",
+                "time": "02:25",
+                "dir": "DN",
+                "halts": "Loop at HPU"
+              }
+            ],
+            "trafficLoad": 1.5,
+            "disruption": 15,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-B",
+            "start": "23:30",
+            "end": "01:00",
+            "passenger": 0,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 24,
+            "coa": "Available",
+            "note": "Uttarakhand Express path",
+            "section": "SEC-302",
+            "date": "2026-09-14",
+            "sectionId": "SEC-302",
+            "capacityMin": 90,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "15035",
+                "name": "Uttarakhand Express",
+                "type": "EXPRESS",
+                "time": "00:50",
+                "dir": "DN",
+                "halts": "GJL 2 min"
+              }
+            ],
+            "trafficLoad": 4,
+            "disruption": 92,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-D",
+            "start": "12:00",
+            "end": "14:30",
+            "passenger": 2,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 33,
+            "coa": "Available",
+            "note": "Mid-day lull — usable for short blocks",
+            "section": "SEC-302",
+            "date": "2026-09-14",
+            "sectionId": "SEC-302",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 93,
+            "trainsAffected": 0
+          },
+          {
+            "id": "W-C",
+            "start": "04:00",
+            "end": "06:30",
+            "passenger": 3,
+            "express": 2,
+            "goods": 1,
+            "densityIndex": 36,
+            "coa": "Restricted",
+            "note": "MEMU + Shatabdi build-up",
+            "section": "SEC-302",
+            "date": "2026-09-14",
+            "sectionId": "SEC-302",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 2,
+              "passenger": 1,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12040",
+                "name": "Kathgodam Shatabdi",
+                "type": "EXPRESS",
+                "time": "06:30",
+                "dir": "DN",
+                "halts": "MB 5 min"
+              },
+              {
+                "no": "14315",
+                "name": "Bareilly Intercity",
+                "type": "EXPRESS",
+                "time": "05:15",
+                "dir": "UP",
+                "halts": "RMU 2 min"
+              },
+              {
+                "no": "64207",
+                "name": "GZB–MB MEMU",
+                "type": "PASSENGER",
+                "time": "04:55",
+                "dir": "DN",
+                "halts": "All stations"
+              }
+            ],
+            "trafficLoad": 11,
+            "disruption": 136,
+            "trainsAffected": 3
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "MERGE",
+            "text": "2 departmental requests on SEC-302 for 14 Sep 2026 are compatible and have been merged into a single corridor block. Serial working would have needed 3.8 hr; coordinated working needs 2.7 hr."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0440 (SNT) with a priority score of 87/100 — CRITICAL criticality, IMMEDIATE urgency, section health 64%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:00–04:00 selected from 4 Control Office windows: lowest operational disruption index (15) with 1 train paths in the window. Lowest-density corridor slot in the division"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 23:30–01:00 rejected — disruption index 92 (1 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for NE-3: 6 rakes/night (24,600 T), peak 02:00 – 04:00. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": true,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-004",
+        "date": "2026-09-14",
+        "section": "SEC-102",
+        "sectionName": "Ghaziabad Jn - Khurja Jn",
+        "corridor": "GC-1",
+        "start": "01:30",
+        "end": "03:30",
+        "durationMin": 120,
+        "serialMin": 120,
+        "savedMin": 0,
+        "depts": [
+          "ENGG"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "USFD weld renewal — 2 locations",
+            "requestId": "BDMS/2026/BR-0470",
+            "durationMin": 120,
+            "score": 62,
+            "band": "MEDIUM"
+          }
+        ],
+        "priority": "MEDIUM",
+        "priorityScore": 62,
+        "leadRequestId": "BDMS/2026/BR-0470",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 1,
+        "baselineTrainsAffected": 2,
+        "assetHealth": 74,
+        "assetAvailability": 94.1,
+        "window": {
+          "id": "W-A",
+          "start": "01:30",
+          "end": "04:30",
+          "passenger": 2,
+          "express": 1,
+          "goods": 4,
+          "densityIndex": 16,
+          "coa": "Available",
+          "note": "Post-mail corridor — standard maintenance slot",
+          "section": "SEC-102",
+          "date": "2026-09-14",
+          "sectionId": "SEC-102",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "GDS-4412",
+              "name": "BOXN Coal Rake",
+              "type": "GOODS",
+              "time": "02:10",
+              "dir": "DN",
+              "halts": "Loop at KRJ"
+            }
+          ],
+          "trafficLoad": 1.5,
+          "disruption": 19,
+          "trainsAffected": 1
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:30",
+            "end": "04:30",
+            "passenger": 2,
+            "express": 1,
+            "goods": 4,
+            "densityIndex": 16,
+            "coa": "Available",
+            "note": "Post-mail corridor — standard maintenance slot",
+            "section": "SEC-102",
+            "date": "2026-09-14",
+            "sectionId": "SEC-102",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "GDS-4412",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:10",
+                "dir": "DN",
+                "halts": "Loop at KRJ"
+              }
+            ],
+            "trafficLoad": 1.5,
+            "disruption": 19,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-B",
+            "start": "23:00",
+            "end": "01:00",
+            "passenger": 0,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 34,
+            "coa": "Available",
+            "note": "Rajdhani / Kalka Mail paths fall in this window",
+            "section": "SEC-102",
+            "date": "2026-09-14",
+            "sectionId": "SEC-102",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 2,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12310",
+                "name": "Rajdhani Express",
+                "type": "EXPRESS",
+                "time": "23:40",
+                "dir": "UP",
+                "halts": "Runs through"
+              },
+              {
+                "no": "12312",
+                "name": "Kalka Mail",
+                "type": "EXPRESS",
+                "time": "00:25",
+                "dir": "UP",
+                "halts": "TDL 5 min"
+              }
+            ],
+            "trafficLoad": 8,
+            "disruption": 50,
+            "trainsAffected": 2
+          },
+          {
+            "id": "W-C",
+            "start": "04:30",
+            "end": "06:30",
+            "passenger": 4,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 41,
+            "coa": "Restricted",
+            "note": "Morning MEMU build-up — high suburban load",
+            "section": "SEC-102",
+            "date": "2026-09-14",
+            "sectionId": "SEC-102",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 1,
+              "passenger": 2,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12002",
+                "name": "Bhopal Shatabdi",
+                "type": "EXPRESS",
+                "time": "06:15",
+                "dir": "DN",
+                "halts": "Runs through"
+              },
+              {
+                "no": "64551",
+                "name": "ALJN–TDL MEMU",
+                "type": "PASSENGER",
+                "time": "04:45",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "64554",
+                "name": "TDL–ALJN MEMU",
+                "type": "PASSENGER",
+                "time": "05:20",
+                "dir": "UP",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-4425",
+                "name": "BCN Cement Rake",
+                "type": "GOODS",
+                "time": "05:05",
+                "dir": "DN",
+                "halts": "Loop at ALJN"
+              }
+            ],
+            "trafficLoad": 11.5,
+            "disruption": 82,
+            "trainsAffected": 4
+          },
+          {
+            "id": "W-D",
+            "start": "13:00",
+            "end": "15:00",
+            "passenger": 3,
+            "express": 4,
+            "goods": 1,
+            "densityIndex": 48,
+            "coa": "Not preferred",
+            "note": "Daytime express density — needs traffic diversion",
+            "section": "SEC-102",
+            "date": "2026-09-14",
+            "sectionId": "SEC-102",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 88,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "SINGLE",
+            "text": "No other departmental demand exists on SEC-102 for 14 Sep 2026; scheduled as a stand-alone block."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0470 (ENGG) with a priority score of 62/100 — HIGH criticality, HIGH urgency, section health 74%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:30–04:30 selected from 4 Control Office windows: lowest operational disruption index (19) with 1 train paths in the window. Post-mail corridor — standard maintenance slot"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 23:00–01:00 rejected — disruption index 50 (2 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for GC-1: 11 rakes/night (46,200 T), peak 02:00 – 04:00. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": false,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-005",
+        "date": "2026-09-15",
+        "section": "SEC-203",
+        "sectionName": "Gurgaon - Rewari Jn",
+        "corridor": "NW-2",
+        "start": "00:15",
+        "end": "03:25",
+        "durationMin": 190,
+        "serialMin": 270,
+        "savedMin": 80,
+        "depts": [
+          "ENGG",
+          "TRD"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "Rail grinding — GMT cycle",
+            "requestId": "BDMS/2026/BR-0447",
+            "durationMin": 180,
+            "score": 54,
+            "band": "MEDIUM"
+          },
+          {
+            "dept": "TRD",
+            "activity": "Contact wire wear survey + spot renewal",
+            "requestId": "BDMS/2026/BR-0452",
+            "durationMin": 90,
+            "score": 43,
+            "band": "LOW"
+          }
+        ],
+        "priority": "MEDIUM",
+        "priorityScore": 54,
+        "leadRequestId": "BDMS/2026/BR-0447",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 2
+        },
+        "trainsAffected": 2,
+        "baselineTrainsAffected": 2,
+        "assetHealth": 71,
+        "assetAvailability": 93.2,
+        "window": {
+          "id": "W-A",
+          "start": "00:15",
+          "end": "04:00",
+          "passenger": 1,
+          "express": 1,
+          "goods": 5,
+          "densityIndex": 18,
+          "coa": "Available",
+          "note": "Freight-dominant window — goods regulation possible",
+          "section": "SEC-203",
+          "date": "2026-09-15",
+          "sectionId": "SEC-203",
+          "capacityMin": 225,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 2
+          },
+          "trains": [
+            {
+              "no": "GDS-6620",
+              "name": "BTPN Tank Rake",
+              "type": "GOODS",
+              "time": "01:20",
+              "dir": "DN",
+              "halts": "Loop at RE"
+            },
+            {
+              "no": "GDS-6631",
+              "name": "DFC Feeder Container",
+              "type": "GOODS",
+              "time": "02:45",
+              "dir": "UP",
+              "halts": "Runs through"
+            }
+          ],
+          "trafficLoad": 3,
+          "disruption": 24,
+          "trainsAffected": 2
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "00:15",
+            "end": "04:00",
+            "passenger": 1,
+            "express": 1,
+            "goods": 5,
+            "densityIndex": 18,
+            "coa": "Available",
+            "note": "Freight-dominant window — goods regulation possible",
+            "section": "SEC-203",
+            "date": "2026-09-15",
+            "sectionId": "SEC-203",
+            "capacityMin": 225,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 2
+            },
+            "trains": [
+              {
+                "no": "GDS-6620",
+                "name": "BTPN Tank Rake",
+                "type": "GOODS",
+                "time": "01:20",
+                "dir": "DN",
+                "halts": "Loop at RE"
+              },
+              {
+                "no": "GDS-6631",
+                "name": "DFC Feeder Container",
+                "type": "GOODS",
+                "time": "02:45",
+                "dir": "UP",
+                "halts": "Runs through"
+              }
+            ],
+            "trafficLoad": 3,
+            "disruption": 24,
+            "trainsAffected": 2
+          },
+          {
+            "id": "W-B",
+            "start": "22:30",
+            "end": "00:30",
+            "passenger": 0,
+            "express": 2,
+            "goods": 4,
+            "densityIndex": 29,
+            "coa": "Available",
+            "note": "Swarna Jayanti Rajdhani path to be protected",
+            "section": "SEC-203",
+            "date": "2026-09-15",
+            "sectionId": "SEC-203",
+            "capacityMin": 120,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12958",
+                "name": "Swarna Jayanti Rajdhani",
+                "type": "EXPRESS",
+                "time": "23:10",
+                "dir": "DN",
+                "halts": "Runs through"
+              }
+            ],
+            "trafficLoad": 4,
+            "disruption": 97,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-C",
+            "start": "03:30",
+            "end": "06:00",
+            "passenger": 3,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 38,
+            "coa": "Restricted",
+            "note": "Aravali + Shatabdi paths",
+            "section": "SEC-203",
+            "date": "2026-09-15",
+            "sectionId": "SEC-203",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 1,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "19708",
+                "name": "Aravali Express",
+                "type": "EXPRESS",
+                "time": "03:50",
+                "dir": "UP",
+                "halts": "RE 5 min"
+              },
+              {
+                "no": "54413",
+                "name": "Rewari–Alwar Passenger",
+                "type": "PASSENGER",
+                "time": "05:40",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-6640",
+                "name": "BOXN Stone Rake",
+                "type": "GOODS",
+                "time": "04:15",
+                "dir": "DN",
+                "halts": "Loop at AWR"
+              }
+            ],
+            "trafficLoad": 8.5,
+            "disruption": 133,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-D",
+            "start": "11:00",
+            "end": "13:30",
+            "passenger": 2,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 44,
+            "coa": "Not preferred",
+            "note": "Daytime goods loading peak at Rewari",
+            "section": "SEC-203",
+            "date": "2026-09-15",
+            "sectionId": "SEC-203",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 144,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "MERGE",
+            "text": "2 departmental requests on SEC-203 for 15 Sep 2026 are compatible and have been merged into a single corridor block. Serial working would have needed 4.5 hr; coordinated working needs 3.2 hr."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0447 (ENGG) with a priority score of 54/100 — MEDIUM criticality, HIGH urgency, section health 71%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 00:15–04:00 selected from 4 Control Office windows: lowest operational disruption index (24) with 2 train paths in the window. Freight-dominant window — goods regulation possible"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 22:30–00:30 rejected — disruption index 97 (1 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for NW-2: 14 rakes/night (58,800 T), peak 00:30 – 03:00. 2 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": true,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-006",
+        "date": "2026-09-16",
+        "section": "SEC-202",
+        "sectionName": "Delhi Cantt - Gurgaon",
+        "corridor": "NW-2",
+        "start": "00:15",
+        "end": "01:55",
+        "durationMin": 100,
+        "serialMin": 165,
+        "savedMin": 65,
+        "depts": [
+          "ENGG",
+          "SNT"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "LC-24 road surface & check-rail renewal",
+            "requestId": "BDMS/2026/BR-0466",
+            "durationMin": 90,
+            "score": 40,
+            "band": "LOW"
+          },
+          {
+            "dept": "SNT",
+            "activity": "LC-24 gate interlocking service",
+            "requestId": "BDMS/2026/BR-0463",
+            "durationMin": 75,
+            "score": 50,
+            "band": "MEDIUM"
+          }
+        ],
+        "priority": "MEDIUM",
+        "priorityScore": 50,
+        "leadRequestId": "BDMS/2026/BR-0463",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 1,
+        "baselineTrainsAffected": 2,
+        "assetHealth": 79,
+        "assetAvailability": 96.8,
+        "window": {
+          "id": "W-A",
+          "start": "00:15",
+          "end": "04:00",
+          "passenger": 1,
+          "express": 1,
+          "goods": 5,
+          "densityIndex": 18,
+          "coa": "Available",
+          "note": "Freight-dominant window — goods regulation possible",
+          "section": "SEC-202",
+          "date": "2026-09-16",
+          "sectionId": "SEC-202",
+          "capacityMin": 225,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "GDS-6620",
+              "name": "BTPN Tank Rake",
+              "type": "GOODS",
+              "time": "01:20",
+              "dir": "DN",
+              "halts": "Loop at RE"
+            }
+          ],
+          "trafficLoad": 1.5,
+          "disruption": 21,
+          "trainsAffected": 1
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "00:15",
+            "end": "04:00",
+            "passenger": 1,
+            "express": 1,
+            "goods": 5,
+            "densityIndex": 18,
+            "coa": "Available",
+            "note": "Freight-dominant window — goods regulation possible",
+            "section": "SEC-202",
+            "date": "2026-09-16",
+            "sectionId": "SEC-202",
+            "capacityMin": 225,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "GDS-6620",
+                "name": "BTPN Tank Rake",
+                "type": "GOODS",
+                "time": "01:20",
+                "dir": "DN",
+                "halts": "Loop at RE"
+              }
+            ],
+            "trafficLoad": 1.5,
+            "disruption": 21,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-B",
+            "start": "22:30",
+            "end": "00:30",
+            "passenger": 0,
+            "express": 2,
+            "goods": 4,
+            "densityIndex": 29,
+            "coa": "Available",
+            "note": "Swarna Jayanti Rajdhani path to be protected",
+            "section": "SEC-202",
+            "date": "2026-09-16",
+            "sectionId": "SEC-202",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12958",
+                "name": "Swarna Jayanti Rajdhani",
+                "type": "EXPRESS",
+                "time": "23:10",
+                "dir": "DN",
+                "halts": "Runs through"
+              }
+            ],
+            "trafficLoad": 4,
+            "disruption": 37,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-C",
+            "start": "03:30",
+            "end": "06:00",
+            "passenger": 3,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 38,
+            "coa": "Restricted",
+            "note": "Aravali + Shatabdi paths",
+            "section": "SEC-202",
+            "date": "2026-09-16",
+            "sectionId": "SEC-202",
+            "capacityMin": 150,
+            "fits": true,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "19708",
+                "name": "Aravali Express",
+                "type": "EXPRESS",
+                "time": "03:50",
+                "dir": "UP",
+                "halts": "RE 5 min"
+              },
+              {
+                "no": "GDS-6640",
+                "name": "BOXN Stone Rake",
+                "type": "GOODS",
+                "time": "04:15",
+                "dir": "DN",
+                "halts": "Loop at AWR"
+              }
+            ],
+            "trafficLoad": 5.5,
+            "disruption": 67,
+            "trainsAffected": 2
+          },
+          {
+            "id": "W-D",
+            "start": "11:00",
+            "end": "13:30",
+            "passenger": 2,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 44,
+            "coa": "Not preferred",
+            "note": "Daytime goods loading peak at Rewari",
+            "section": "SEC-202",
+            "date": "2026-09-16",
+            "sectionId": "SEC-202",
+            "capacityMin": 150,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 84,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "MERGE",
+            "text": "2 departmental requests on SEC-202 for 16 Sep 2026 are compatible and have been merged into a single corridor block. Serial working would have needed 2.8 hr; coordinated working needs 1.7 hr."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0463 (SNT) with a priority score of 50/100 — MEDIUM criticality, NORMAL urgency, section health 79%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 00:15–04:00 selected from 4 Control Office windows: lowest operational disruption index (21) with 1 train paths in the window. Freight-dominant window — goods regulation possible"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 22:30–00:30 rejected — disruption index 37 (1 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for NW-2: 14 rakes/night (58,800 T), peak 00:30 – 03:00. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": true,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-007",
+        "date": "2026-09-16",
+        "section": "SEC-404",
+        "sectionName": "Morena - Gwalior Jn",
+        "corridor": "SC-4",
+        "start": "00:45",
+        "end": "03:25",
+        "durationMin": 160,
+        "serialMin": 240,
+        "savedMin": 80,
+        "depts": [
+          "ENGG",
+          "TRD"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "Ballast cleaning — Km 152/0–156/0",
+            "requestId": "BDMS/2026/BR-0459",
+            "durationMin": 90,
+            "score": 37,
+            "band": "LOW"
+          },
+          {
+            "dept": "TRD",
+            "activity": "Neutral section assembly overhaul",
+            "requestId": "BDMS/2026/BR-0455",
+            "durationMin": 150,
+            "score": 68,
+            "band": "MEDIUM"
+          }
+        ],
+        "priority": "MEDIUM",
+        "priorityScore": 68,
+        "leadRequestId": "BDMS/2026/BR-0455",
+        "trains": {
+          "express": 2,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 3,
+        "baselineTrainsAffected": 4,
+        "assetHealth": 69,
+        "assetAvailability": 92.4,
+        "window": {
+          "id": "W-A",
+          "start": "00:45",
+          "end": "03:45",
+          "passenger": 1,
+          "express": 2,
+          "goods": 3,
+          "densityIndex": 22,
+          "coa": "Available",
+          "note": "GT Express path to be regulated",
+          "section": "SEC-404",
+          "date": "2026-09-16",
+          "sectionId": "SEC-404",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 2,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "12615",
+              "name": "Grand Trunk Express",
+              "type": "EXPRESS",
+              "time": "01:35",
+              "dir": "UP",
+              "halts": "GWL 5 min"
+            },
+            {
+              "no": "11078",
+              "name": "Jhelum Express",
+              "type": "EXPRESS",
+              "time": "03:20",
+              "dir": "DN",
+              "halts": "DHO 2 min"
+            },
+            {
+              "no": "GDS-8814",
+              "name": "BOXN Coal Rake",
+              "type": "GOODS",
+              "time": "02:05",
+              "dir": "UP",
+              "halts": "Loop at DHO"
+            }
+          ],
+          "trafficLoad": 9.5,
+          "disruption": 41,
+          "trainsAffected": 3
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "00:45",
+            "end": "03:45",
+            "passenger": 1,
+            "express": 2,
+            "goods": 3,
+            "densityIndex": 22,
+            "coa": "Available",
+            "note": "GT Express path to be regulated",
+            "section": "SEC-404",
+            "date": "2026-09-16",
+            "sectionId": "SEC-404",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 2,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12615",
+                "name": "Grand Trunk Express",
+                "type": "EXPRESS",
+                "time": "01:35",
+                "dir": "UP",
+                "halts": "GWL 5 min"
+              },
+              {
+                "no": "11078",
+                "name": "Jhelum Express",
+                "type": "EXPRESS",
+                "time": "03:20",
+                "dir": "DN",
+                "halts": "DHO 2 min"
+              },
+              {
+                "no": "GDS-8814",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:05",
+                "dir": "UP",
+                "halts": "Loop at DHO"
+              }
+            ],
+            "trafficLoad": 9.5,
+            "disruption": 41,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-C",
+            "start": "03:15",
+            "end": "05:45",
+            "passenger": 2,
+            "express": 2,
+            "goods": 3,
+            "densityIndex": 31,
+            "coa": "Available",
+            "note": "Jhelum Express path in window",
+            "section": "SEC-404",
+            "date": "2026-09-16",
+            "sectionId": "SEC-404",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 1,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "11078",
+                "name": "Jhelum Express",
+                "type": "EXPRESS",
+                "time": "03:20",
+                "dir": "DN",
+                "halts": "DHO 2 min"
+              },
+              {
+                "no": "51886",
+                "name": "Agra–Gwalior Passenger",
+                "type": "PASSENGER",
+                "time": "05:30",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-8822",
+                "name": "BCN Cement Rake",
+                "type": "GOODS",
+                "time": "04:30",
+                "dir": "DN",
+                "halts": "Loop at MRA"
+              }
+            ],
+            "trafficLoad": 8.5,
+            "disruption": 108,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-B",
+            "start": "22:00",
+            "end": "00:30",
+            "passenger": 0,
+            "express": 3,
+            "goods": 2,
+            "densityIndex": 37,
+            "coa": "Restricted",
+            "note": "Tamil Nadu Express + southbound trunk load",
+            "section": "SEC-404",
+            "date": "2026-09-16",
+            "sectionId": "SEC-404",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12621",
+                "name": "Tamil Nadu Express",
+                "type": "EXPRESS",
+                "time": "23:55",
+                "dir": "DN",
+                "halts": "AGC 5 min"
+              }
+            ],
+            "trafficLoad": 4,
+            "disruption": 123,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-D",
+            "start": "09:00",
+            "end": "11:00",
+            "passenger": 1,
+            "express": 4,
+            "goods": 1,
+            "densityIndex": 52,
+            "coa": "Not preferred",
+            "note": "Gatimaan Express corridor — no block permitted",
+            "section": "SEC-404",
+            "date": "2026-09-16",
+            "sectionId": "SEC-404",
+            "capacityMin": 120,
+            "fits": false,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 152,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "MERGE",
+            "text": "2 departmental requests on SEC-404 for 16 Sep 2026 are compatible and have been merged into a single corridor block. Serial working would have needed 4 hr; coordinated working needs 2.7 hr."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0455 (TRD) with a priority score of 68/100 — HIGH criticality, HIGH urgency, section health 69%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 00:45–03:45 selected from 4 Control Office windows: lowest operational disruption index (41) with 3 train paths in the window. GT Express path to be regulated"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 03:15–05:45 rejected — disruption index 108 (1 express, 1 passenger, 1 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for SC-4: 9 rakes/night (39,400 T), peak 01:30 – 04:30. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": true,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Moderate — goods rakes to be looped",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-008",
+        "date": "2026-09-17",
+        "section": "SEC-402",
+        "sectionName": "Agra Cantt - Dholpur Jn",
+        "corridor": "SC-4",
+        "start": "22:00",
+        "end": "04:00",
+        "durationMin": 360,
+        "serialMin": 360,
+        "savedMin": 0,
+        "depts": [
+          "ENGG"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "BCM deployment — deep screening 3 km",
+            "requestId": "BDMS/2026/BR-0481",
+            "durationMin": 360,
+            "score": 60,
+            "band": "MEDIUM"
+          }
+        ],
+        "priority": "MEDIUM",
+        "priorityScore": 60,
+        "leadRequestId": "BDMS/2026/BR-0481",
+        "trains": {
+          "express": 3,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 4,
+        "baselineTrainsAffected": 4,
+        "assetHealth": 53,
+        "assetAvailability": 76.8,
+        "window": {
+          "id": "W-A",
+          "start": "22:00",
+          "end": "06:00",
+          "passenger": 2,
+          "express": 4,
+          "goods": 5,
+          "densityIndex": 46,
+          "coa": "Corridor block in force",
+          "note": "Mega block sanctioned for Br. 88 — single line working",
+          "section": "SEC-402",
+          "date": "2026-09-17",
+          "sectionId": "SEC-402",
+          "capacityMin": 480,
+          "fits": true,
+          "counts": {
+            "express": 3,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "12621",
+              "name": "Tamil Nadu Express",
+              "type": "EXPRESS",
+              "time": "23:55",
+              "dir": "DN",
+              "halts": "AGC 5 min"
+            },
+            {
+              "no": "12615",
+              "name": "Grand Trunk Express",
+              "type": "EXPRESS",
+              "time": "01:35",
+              "dir": "UP",
+              "halts": "GWL 5 min"
+            },
+            {
+              "no": "11078",
+              "name": "Jhelum Express",
+              "type": "EXPRESS",
+              "time": "03:20",
+              "dir": "DN",
+              "halts": "DHO 2 min"
+            },
+            {
+              "no": "GDS-8814",
+              "name": "BOXN Coal Rake",
+              "type": "GOODS",
+              "time": "02:05",
+              "dir": "UP",
+              "halts": "Loop at DHO"
+            }
+          ],
+          "trafficLoad": 13.5,
+          "disruption": 73,
+          "trainsAffected": 4
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "22:00",
+            "end": "06:00",
+            "passenger": 2,
+            "express": 4,
+            "goods": 5,
+            "densityIndex": 46,
+            "coa": "Corridor block in force",
+            "note": "Mega block sanctioned for Br. 88 — single line working",
+            "section": "SEC-402",
+            "date": "2026-09-17",
+            "sectionId": "SEC-402",
+            "capacityMin": 480,
+            "fits": true,
+            "counts": {
+              "express": 3,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12621",
+                "name": "Tamil Nadu Express",
+                "type": "EXPRESS",
+                "time": "23:55",
+                "dir": "DN",
+                "halts": "AGC 5 min"
+              },
+              {
+                "no": "12615",
+                "name": "Grand Trunk Express",
+                "type": "EXPRESS",
+                "time": "01:35",
+                "dir": "UP",
+                "halts": "GWL 5 min"
+              },
+              {
+                "no": "11078",
+                "name": "Jhelum Express",
+                "type": "EXPRESS",
+                "time": "03:20",
+                "dir": "DN",
+                "halts": "DHO 2 min"
+              },
+              {
+                "no": "GDS-8814",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:05",
+                "dir": "UP",
+                "halts": "Loop at DHO"
+              }
+            ],
+            "trafficLoad": 13.5,
+            "disruption": 73,
+            "trainsAffected": 4
+          },
+          {
+            "id": "W-B",
+            "start": "01:00",
+            "end": "03:30",
+            "passenger": 1,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 26,
+            "coa": "Available after 09 Sep",
+            "note": "Available once mega block is lifted",
+            "section": "SEC-402",
+            "date": "2026-09-17",
+            "sectionId": "SEC-402",
+            "capacityMin": 150,
+            "fits": false,
+            "counts": {
+              "express": 2,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12615",
+                "name": "Grand Trunk Express",
+                "type": "EXPRESS",
+                "time": "01:35",
+                "dir": "UP",
+                "halts": "GWL 5 min"
+              },
+              {
+                "no": "11078",
+                "name": "Jhelum Express",
+                "type": "EXPRESS",
+                "time": "03:20",
+                "dir": "DN",
+                "halts": "DHO 2 min"
+              },
+              {
+                "no": "GDS-8814",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:05",
+                "dir": "UP",
+                "halts": "Loop at DHO"
+              }
+            ],
+            "trafficLoad": 9.5,
+            "disruption": 105,
+            "trainsAffected": 3
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "EXCLUSIVE",
+            "text": "BDMS/2026/BR-0481 requires sole occupation (Track machine (BCM) occupies the full section — no other department can work alongside.) and has been kept as a stand-alone block."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0481 (ENGG) with a priority score of 60/100 — HIGH criticality, HIGH urgency, section health 53%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 22:00–06:00 selected from 2 Control Office windows: lowest operational disruption index (73) with 4 train paths in the window. Mega block sanctioned for Br. 88 — single line working"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 01:00–03:30 rejected — disruption index 105 (2 express, 0 passenger, 1 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for SC-4: 9 rakes/night (39,400 T), peak 01:30 – 04:30. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": false,
+        "exclusive": true,
+        "overrunMin": 0,
+        "impact": "High — traffic diversion required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-009",
+        "date": "2026-09-18",
+        "section": "SEC-305",
+        "sectionName": "Rampur - Bareilly Jn",
+        "corridor": "NE-3",
+        "start": "01:00",
+        "end": "03:30",
+        "durationMin": 150,
+        "serialMin": 150,
+        "savedMin": 0,
+        "depts": [
+          "ENGG"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "Br. 214 girder bearing replacement",
+            "requestId": "BDMS/2026/BR-0474",
+            "durationMin": 150,
+            "score": 63,
+            "band": "MEDIUM"
+          }
+        ],
+        "priority": "MEDIUM",
+        "priorityScore": 63,
+        "leadRequestId": "BDMS/2026/BR-0474",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 1,
+        "baselineTrainsAffected": 2,
+        "assetHealth": 72,
+        "assetAvailability": 93.8,
+        "window": {
+          "id": "W-A",
+          "start": "01:00",
+          "end": "04:00",
+          "passenger": 1,
+          "express": 1,
+          "goods": 3,
+          "densityIndex": 12,
+          "coa": "Available",
+          "note": "Lowest-density corridor slot in the division",
+          "section": "SEC-305",
+          "date": "2026-09-18",
+          "sectionId": "SEC-305",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "GDS-7712",
+              "name": "BCN Foodgrain Rake",
+              "type": "GOODS",
+              "time": "02:25",
+              "dir": "DN",
+              "halts": "Loop at HPU"
+            }
+          ],
+          "trafficLoad": 1.5,
+          "disruption": 15,
+          "trainsAffected": 1
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:00",
+            "end": "04:00",
+            "passenger": 1,
+            "express": 1,
+            "goods": 3,
+            "densityIndex": 12,
+            "coa": "Available",
+            "note": "Lowest-density corridor slot in the division",
+            "section": "SEC-305",
+            "date": "2026-09-18",
+            "sectionId": "SEC-305",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "GDS-7712",
+                "name": "BCN Foodgrain Rake",
+                "type": "GOODS",
+                "time": "02:25",
+                "dir": "DN",
+                "halts": "Loop at HPU"
+              }
+            ],
+            "trafficLoad": 1.5,
+            "disruption": 15,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-D",
+            "start": "12:00",
+            "end": "14:30",
+            "passenger": 2,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 33,
+            "coa": "Available",
+            "note": "Mid-day lull — usable for short blocks",
+            "section": "SEC-305",
+            "date": "2026-09-18",
+            "sectionId": "SEC-305",
+            "capacityMin": 150,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 33,
+            "trainsAffected": 0
+          },
+          {
+            "id": "W-C",
+            "start": "04:00",
+            "end": "06:30",
+            "passenger": 3,
+            "express": 2,
+            "goods": 1,
+            "densityIndex": 36,
+            "coa": "Restricted",
+            "note": "MEMU + Shatabdi build-up",
+            "section": "SEC-305",
+            "date": "2026-09-18",
+            "sectionId": "SEC-305",
+            "capacityMin": 150,
+            "fits": true,
+            "counts": {
+              "express": 2,
+              "passenger": 1,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12040",
+                "name": "Kathgodam Shatabdi",
+                "type": "EXPRESS",
+                "time": "06:30",
+                "dir": "DN",
+                "halts": "MB 5 min"
+              },
+              {
+                "no": "14315",
+                "name": "Bareilly Intercity",
+                "type": "EXPRESS",
+                "time": "05:15",
+                "dir": "UP",
+                "halts": "RMU 2 min"
+              },
+              {
+                "no": "64207",
+                "name": "GZB–MB MEMU",
+                "type": "PASSENGER",
+                "time": "04:55",
+                "dir": "DN",
+                "halts": "All stations"
+              }
+            ],
+            "trafficLoad": 11,
+            "disruption": 76,
+            "trainsAffected": 3
+          },
+          {
+            "id": "W-B",
+            "start": "23:30",
+            "end": "01:00",
+            "passenger": 0,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 24,
+            "coa": "Available",
+            "note": "Uttarakhand Express path",
+            "section": "SEC-305",
+            "date": "2026-09-18",
+            "sectionId": "SEC-305",
+            "capacityMin": 90,
+            "fits": false,
+            "counts": {
+              "express": 1,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "15035",
+                "name": "Uttarakhand Express",
+                "type": "EXPRESS",
+                "time": "00:50",
+                "dir": "DN",
+                "halts": "GJL 2 min"
+              }
+            ],
+            "trafficLoad": 4,
+            "disruption": 92,
+            "trainsAffected": 1
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "SINGLE",
+            "text": "No other departmental demand exists on SEC-305 for 18 Sep 2026; scheduled as a stand-alone block."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0474 (ENGG) with a priority score of 63/100 — HIGH criticality, HIGH urgency, section health 72%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:00–04:00 selected from 4 Control Office windows: lowest operational disruption index (15) with 1 train paths in the window. Lowest-density corridor slot in the division"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 12:00–14:30 rejected — disruption index 33 (0 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for NE-3: 6 rakes/night (24,600 T), peak 02:00 – 04:00. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": false,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-010",
+        "date": "2026-09-18",
+        "section": "SEC-101",
+        "sectionName": "New Delhi - Ghaziabad Jn",
+        "corridor": "GC-1",
+        "start": "01:30",
+        "end": "03:30",
+        "durationMin": 120,
+        "serialMin": 120,
+        "savedMin": 0,
+        "depts": [
+          "ENGG"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "Deep screening — Km 12/0–14/0",
+            "requestId": "BDMS/2026/BR-0484",
+            "durationMin": 120,
+            "score": 22,
+            "band": "LOW"
+          }
+        ],
+        "priority": "LOW",
+        "priorityScore": 22,
+        "leadRequestId": "BDMS/2026/BR-0484",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 1,
+        "baselineTrainsAffected": 1,
+        "assetHealth": 88,
+        "assetAvailability": 98.2,
+        "window": {
+          "id": "W-A",
+          "start": "01:30",
+          "end": "04:30",
+          "passenger": 2,
+          "express": 1,
+          "goods": 4,
+          "densityIndex": 16,
+          "coa": "Available",
+          "note": "Post-mail corridor — standard maintenance slot",
+          "section": "SEC-101",
+          "date": "2026-09-18",
+          "sectionId": "SEC-101",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "GDS-4412",
+              "name": "BOXN Coal Rake",
+              "type": "GOODS",
+              "time": "02:10",
+              "dir": "DN",
+              "halts": "Loop at KRJ"
+            }
+          ],
+          "trafficLoad": 1.5,
+          "disruption": 19,
+          "trainsAffected": 1
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:30",
+            "end": "04:30",
+            "passenger": 2,
+            "express": 1,
+            "goods": 4,
+            "densityIndex": 16,
+            "coa": "Available",
+            "note": "Post-mail corridor — standard maintenance slot",
+            "section": "SEC-101",
+            "date": "2026-09-18",
+            "sectionId": "SEC-101",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "GDS-4412",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:10",
+                "dir": "DN",
+                "halts": "Loop at KRJ"
+              }
+            ],
+            "trafficLoad": 1.5,
+            "disruption": 19,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-B",
+            "start": "23:00",
+            "end": "01:00",
+            "passenger": 0,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 34,
+            "coa": "Available",
+            "note": "Rajdhani / Kalka Mail paths fall in this window",
+            "section": "SEC-101",
+            "date": "2026-09-18",
+            "sectionId": "SEC-101",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 2,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12310",
+                "name": "Rajdhani Express",
+                "type": "EXPRESS",
+                "time": "23:40",
+                "dir": "UP",
+                "halts": "Runs through"
+              },
+              {
+                "no": "12312",
+                "name": "Kalka Mail",
+                "type": "EXPRESS",
+                "time": "00:25",
+                "dir": "UP",
+                "halts": "TDL 5 min"
+              }
+            ],
+            "trafficLoad": 8,
+            "disruption": 50,
+            "trainsAffected": 2
+          },
+          {
+            "id": "W-C",
+            "start": "04:30",
+            "end": "06:30",
+            "passenger": 4,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 41,
+            "coa": "Restricted",
+            "note": "Morning MEMU build-up — high suburban load",
+            "section": "SEC-101",
+            "date": "2026-09-18",
+            "sectionId": "SEC-101",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 1,
+              "passenger": 2,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12002",
+                "name": "Bhopal Shatabdi",
+                "type": "EXPRESS",
+                "time": "06:15",
+                "dir": "DN",
+                "halts": "Runs through"
+              },
+              {
+                "no": "64551",
+                "name": "ALJN–TDL MEMU",
+                "type": "PASSENGER",
+                "time": "04:45",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "64554",
+                "name": "TDL–ALJN MEMU",
+                "type": "PASSENGER",
+                "time": "05:20",
+                "dir": "UP",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-4425",
+                "name": "BCN Cement Rake",
+                "type": "GOODS",
+                "time": "05:05",
+                "dir": "DN",
+                "halts": "Loop at ALJN"
+              }
+            ],
+            "trafficLoad": 11.5,
+            "disruption": 82,
+            "trainsAffected": 4
+          },
+          {
+            "id": "W-D",
+            "start": "13:00",
+            "end": "15:00",
+            "passenger": 3,
+            "express": 4,
+            "goods": 1,
+            "densityIndex": 48,
+            "coa": "Not preferred",
+            "note": "Daytime express density — needs traffic diversion",
+            "section": "SEC-101",
+            "date": "2026-09-18",
+            "sectionId": "SEC-101",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 88,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "SINGLE",
+            "text": "No other departmental demand exists on SEC-101 for 18 Sep 2026; scheduled as a stand-alone block."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0484 (ENGG) with a priority score of 22/100 — LOW criticality, PLANNED urgency, section health 88%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:30–04:30 selected from 4 Control Office windows: lowest operational disruption index (19) with 1 train paths in the window. Post-mail corridor — standard maintenance slot"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 23:00–01:00 rejected — disruption index 50 (2 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for GC-1: 11 rakes/night (46,200 T), peak 02:00 – 04:00. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": false,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-011",
+        "date": "2026-09-19",
+        "section": "SEC-303",
+        "sectionName": "Gajraula Jn - Moradabad Jn",
+        "corridor": "NE-3",
+        "start": "01:00",
+        "end": "02:00",
+        "durationMin": 60,
+        "serialMin": 60,
+        "savedMin": 0,
+        "depts": [
+          "SNT"
+        ],
+        "tasks": [
+          {
+            "dept": "SNT",
+            "activity": "Point 12B servicing",
+            "requestId": "BDMS/2026/BR-0478",
+            "durationMin": 60,
+            "score": 33,
+            "band": "LOW"
+          }
+        ],
+        "priority": "LOW",
+        "priorityScore": 33,
+        "leadRequestId": "BDMS/2026/BR-0478",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 0
+        },
+        "trainsAffected": 0,
+        "baselineTrainsAffected": 1,
+        "assetHealth": 76,
+        "assetAvailability": 95.6,
+        "window": {
+          "id": "W-A",
+          "start": "01:00",
+          "end": "04:00",
+          "passenger": 1,
+          "express": 1,
+          "goods": 3,
+          "densityIndex": 12,
+          "coa": "Available",
+          "note": "Lowest-density corridor slot in the division",
+          "section": "SEC-303",
+          "date": "2026-09-19",
+          "sectionId": "SEC-303",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 0
+          },
+          "trains": [],
+          "trafficLoad": 0,
+          "disruption": 12,
+          "trainsAffected": 0
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:00",
+            "end": "04:00",
+            "passenger": 1,
+            "express": 1,
+            "goods": 3,
+            "densityIndex": 12,
+            "coa": "Available",
+            "note": "Lowest-density corridor slot in the division",
+            "section": "SEC-303",
+            "date": "2026-09-19",
+            "sectionId": "SEC-303",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 12,
+            "trainsAffected": 0
+          },
+          {
+            "id": "W-B",
+            "start": "23:30",
+            "end": "01:00",
+            "passenger": 0,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 24,
+            "coa": "Available",
+            "note": "Uttarakhand Express path",
+            "section": "SEC-303",
+            "date": "2026-09-19",
+            "sectionId": "SEC-303",
+            "capacityMin": 90,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 24,
+            "trainsAffected": 0
+          },
+          {
+            "id": "W-D",
+            "start": "12:00",
+            "end": "14:30",
+            "passenger": 2,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 33,
+            "coa": "Available",
+            "note": "Mid-day lull — usable for short blocks",
+            "section": "SEC-303",
+            "date": "2026-09-19",
+            "sectionId": "SEC-303",
+            "capacityMin": 150,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 33,
+            "trainsAffected": 0
+          },
+          {
+            "id": "W-C",
+            "start": "04:00",
+            "end": "06:30",
+            "passenger": 3,
+            "express": 2,
+            "goods": 1,
+            "densityIndex": 36,
+            "coa": "Restricted",
+            "note": "MEMU + Shatabdi build-up",
+            "section": "SEC-303",
+            "date": "2026-09-19",
+            "sectionId": "SEC-303",
+            "capacityMin": 150,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 1,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "64207",
+                "name": "GZB–MB MEMU",
+                "type": "PASSENGER",
+                "time": "04:55",
+                "dir": "DN",
+                "halts": "All stations"
+              }
+            ],
+            "trafficLoad": 3,
+            "disruption": 60,
+            "trainsAffected": 1
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "SINGLE",
+            "text": "No other departmental demand exists on SEC-303 for 19 Sep 2026; scheduled as a stand-alone block."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0478 (SNT) with a priority score of 33/100 — LOW criticality, NORMAL urgency, section health 76%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:00–04:00 selected from 4 Control Office windows: lowest operational disruption index (12) with 0 train paths in the window. Lowest-density corridor slot in the division"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 23:30–01:00 rejected — disruption index 24 (0 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for NE-3: 6 rakes/night (24,600 T), peak 02:00 – 04:00. 0 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": false,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      },
+      {
+        "id": "BLK-AI-012",
+        "date": "2026-09-20",
+        "section": "SEC-106",
+        "sectionName": "Etawah - Kanpur Central",
+        "corridor": "GC-1",
+        "start": "01:30",
+        "end": "03:30",
+        "durationMin": 120,
+        "serialMin": 120,
+        "savedMin": 0,
+        "depts": [
+          "ENGG"
+        ],
+        "tasks": [
+          {
+            "dept": "ENGG",
+            "activity": "LWR creep adjustment",
+            "requestId": "BDMS/2026/BR-0487",
+            "durationMin": 120,
+            "score": 22,
+            "band": "LOW"
+          }
+        ],
+        "priority": "LOW",
+        "priorityScore": 22,
+        "leadRequestId": "BDMS/2026/BR-0487",
+        "trains": {
+          "express": 0,
+          "passenger": 0,
+          "goods": 1
+        },
+        "trainsAffected": 1,
+        "baselineTrainsAffected": 1,
+        "assetHealth": 83,
+        "assetAvailability": 97.4,
+        "window": {
+          "id": "W-A",
+          "start": "01:30",
+          "end": "04:30",
+          "passenger": 2,
+          "express": 1,
+          "goods": 4,
+          "densityIndex": 16,
+          "coa": "Available",
+          "note": "Post-mail corridor — standard maintenance slot",
+          "section": "SEC-106",
+          "date": "2026-09-20",
+          "sectionId": "SEC-106",
+          "capacityMin": 180,
+          "fits": true,
+          "counts": {
+            "express": 0,
+            "passenger": 0,
+            "goods": 1
+          },
+          "trains": [
+            {
+              "no": "GDS-4412",
+              "name": "BOXN Coal Rake",
+              "type": "GOODS",
+              "time": "02:10",
+              "dir": "DN",
+              "halts": "Loop at KRJ"
+            }
+          ],
+          "trafficLoad": 1.5,
+          "disruption": 19,
+          "trainsAffected": 1
+        },
+        "alternatives": [
+          {
+            "id": "W-A",
+            "start": "01:30",
+            "end": "04:30",
+            "passenger": 2,
+            "express": 1,
+            "goods": 4,
+            "densityIndex": 16,
+            "coa": "Available",
+            "note": "Post-mail corridor — standard maintenance slot",
+            "section": "SEC-106",
+            "date": "2026-09-20",
+            "sectionId": "SEC-106",
+            "capacityMin": 180,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "GDS-4412",
+                "name": "BOXN Coal Rake",
+                "type": "GOODS",
+                "time": "02:10",
+                "dir": "DN",
+                "halts": "Loop at KRJ"
+              }
+            ],
+            "trafficLoad": 1.5,
+            "disruption": 19,
+            "trainsAffected": 1
+          },
+          {
+            "id": "W-B",
+            "start": "23:00",
+            "end": "01:00",
+            "passenger": 0,
+            "express": 3,
+            "goods": 3,
+            "densityIndex": 34,
+            "coa": "Available",
+            "note": "Rajdhani / Kalka Mail paths fall in this window",
+            "section": "SEC-106",
+            "date": "2026-09-20",
+            "sectionId": "SEC-106",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 2,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [
+              {
+                "no": "12310",
+                "name": "Rajdhani Express",
+                "type": "EXPRESS",
+                "time": "23:40",
+                "dir": "UP",
+                "halts": "Runs through"
+              },
+              {
+                "no": "12312",
+                "name": "Kalka Mail",
+                "type": "EXPRESS",
+                "time": "00:25",
+                "dir": "UP",
+                "halts": "TDL 5 min"
+              }
+            ],
+            "trafficLoad": 8,
+            "disruption": 50,
+            "trainsAffected": 2
+          },
+          {
+            "id": "W-C",
+            "start": "04:30",
+            "end": "06:30",
+            "passenger": 4,
+            "express": 2,
+            "goods": 2,
+            "densityIndex": 41,
+            "coa": "Restricted",
+            "note": "Morning MEMU build-up — high suburban load",
+            "section": "SEC-106",
+            "date": "2026-09-20",
+            "sectionId": "SEC-106",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 1,
+              "passenger": 2,
+              "goods": 1
+            },
+            "trains": [
+              {
+                "no": "12002",
+                "name": "Bhopal Shatabdi",
+                "type": "EXPRESS",
+                "time": "06:15",
+                "dir": "DN",
+                "halts": "Runs through"
+              },
+              {
+                "no": "64551",
+                "name": "ALJN–TDL MEMU",
+                "type": "PASSENGER",
+                "time": "04:45",
+                "dir": "DN",
+                "halts": "All stations"
+              },
+              {
+                "no": "64554",
+                "name": "TDL–ALJN MEMU",
+                "type": "PASSENGER",
+                "time": "05:20",
+                "dir": "UP",
+                "halts": "All stations"
+              },
+              {
+                "no": "GDS-4425",
+                "name": "BCN Cement Rake",
+                "type": "GOODS",
+                "time": "05:05",
+                "dir": "DN",
+                "halts": "Loop at ALJN"
+              }
+            ],
+            "trafficLoad": 11.5,
+            "disruption": 82,
+            "trainsAffected": 4
+          },
+          {
+            "id": "W-D",
+            "start": "13:00",
+            "end": "15:00",
+            "passenger": 3,
+            "express": 4,
+            "goods": 1,
+            "densityIndex": 48,
+            "coa": "Not preferred",
+            "note": "Daytime express density — needs traffic diversion",
+            "section": "SEC-106",
+            "date": "2026-09-20",
+            "sectionId": "SEC-106",
+            "capacityMin": 120,
+            "fits": true,
+            "counts": {
+              "express": 0,
+              "passenger": 0,
+              "goods": 0
+            },
+            "trains": [],
+            "trafficLoad": 0,
+            "disruption": 88,
+            "trainsAffected": 0
+          }
+        ],
+        "reasoning": [
+          {
+            "type": "SINGLE",
+            "text": "No other departmental demand exists on SEC-106 for 20 Sep 2026; scheduled as a stand-alone block."
+          },
+          {
+            "type": "PRIORITY",
+            "text": "Block priority driven by BDMS/2026/BR-0487 (ENGG) with a priority score of 22/100 — LOW criticality, PLANNED urgency, section health 83%."
+          },
+          {
+            "type": "WINDOW",
+            "text": "Window 01:30–04:30 selected from 4 Control Office windows: lowest operational disruption index (19) with 1 train paths in the window. Post-mail corridor — standard maintenance slot"
+          },
+          {
+            "type": "ALTERNATIVE",
+            "text": "Next-best window 23:00–01:00 rejected — disruption index 50 (2 express, 0 passenger, 0 goods paths)."
+          },
+          {
+            "type": "GOODS",
+            "text": "Goods forecast for GC-1: 11 rakes/night (46,200 T), peak 02:00 – 04:00. 1 rakes to be regulated or looped during this block."
+          }
+        ],
+        "merged": false,
+        "exclusive": false,
+        "overrunMin": 0,
+        "impact": "Low — minimal path regulation required",
+        "state": "PROPOSED",
+        "source": "OPTIMISED"
+      }
+    ],
+    "metrics": {
+      "totalRequests": 19,
+      "blocksBefore": 19,
+      "blocksAfter": 12,
+      "blocksSaved": 7,
+      "beforeMin": 2430,
+      "afterMin": 1915,
+      "savedMin": 515,
+      "beforeHours": 40.5,
+      "afterHours": 31.9,
+      "savedHours": 8.6,
+      "downtimeReduction": 21.2,
+      "availabilityGain": 3,
+      "beforeTrains": 28,
+      "afterTrains": 20,
+      "trainsProtected": 8,
+      "mergedBlocks": 6,
+      "combinedActivities": 13,
+      "sectionsCovered": 12,
+      "bands": {
+        "CRITICAL": 3,
+        "HIGH": 3,
+        "MEDIUM": 6,
+        "LOW": 7
+      },
+      "deptCount": {
+        "ENGG": 11,
+        "SNT": 4,
+        "TRD": 4
+      },
+      "utilisationBefore": 53,
+      "utilisationAfter": 84
+    },
+    "unscheduled": []
+  },
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

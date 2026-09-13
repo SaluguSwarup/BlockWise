@@ -2,8 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppState.jsx';
 import { REQUEST_STATUS } from '../data/blockRequests.js';
-import { TRACK_BY_ID } from '../data/tracks.js';
-import { buildStageContext, ENGINE_STAGES, runPlanner } from '../lib/planningEngine.js';
+import { buildStageContext, ENGINE_STAGES } from '../lib/engineStages.js';
+import CANNED_PLAN from '../mocks/plan.json';
 import { formatDate, formatDuration } from '../lib/format.js';
 import { Badge, Callout, DeptTag, HealthValue, Icon, Panel, ProgressBar, ScorePill, Stat } from '../components/common/UI.jsx';
 import ConceptFlow from '../components/common/ConceptFlow.jsx';
@@ -35,7 +35,7 @@ function MergeViz({ block }) {
       </div>
 
       <div className="merge-arrow">
-        <div style={{ fontSize: 11, letterSpacing: '0.08em', color: 'var(--text-3)' }}>AI</div>
+        <div style={{ fontSize: 11, letterSpacing: '0.08em', color: 'var(--text-3)' }}>OPT</div>
         ›
       </div>
 
@@ -82,7 +82,7 @@ export default function PlanningEnginePage() {
   const timer = useRef(null);
   const consoleRef = useRef(null);
 
-  const ctx = useMemo(() => (result ? buildStageContext(selected.length ? selected : [], result) : null), [result, selected]);
+  const ctx = useMemo(() => (result ? buildStageContext(result) : null), [result]);
 
   useEffect(() => () => clearTimeout(timer.current), []);
 
@@ -90,9 +90,12 @@ export default function PlanningEnginePage() {
     if (consoleRef.current) consoleRef.current.scrollTop = consoleRef.current.scrollHeight;
   }, [log]);
 
+  // Strict canned fixture (R3 — Team B does not run the engine). This always renders
+  // src/mocks/plan.json regardless of which requests are selected in BDMS, until B7 switches to
+  // the real POST /api/plan on Day 3. See src/mocks/README.md.
   const start = () => {
-    const r = runPlanner(selected);
-    const c = buildStageContext(selected, r);
+    const r = CANNED_PLAN.data;
+    const c = buildStageContext(r);
     setResult(r);
     setPhase('running');
     setStage(0);
@@ -115,7 +118,7 @@ export default function PlanningEnginePage() {
 
   const skip = () => {
     clearTimeout(timer.current);
-    const c = buildStageContext(selected, result);
+    const c = buildStageContext(result);
     setLog(ENGINE_STAGES.map((s) => ({ t: `[${s.source}] ${s.title}… ${s.detail(c)}`, k: '' })));
     setStage(ENGINE_STAGES.length);
     setPhase('done');
@@ -246,6 +249,13 @@ export default function PlanningEnginePage() {
         )}
       </div>
 
+      <Callout tone="info" icon="alert">
+        <strong>Frozen Day-0 fixture. </strong>
+        This result is Team B's canned planner fixture (<code>src/mocks/plan.json</code>), the same
+        for every run — it does not depend on which requests are selected. It switches to the real
+        <code> POST /api/plan</code> when B7 is built (Day 3).
+      </Callout>
+
       {/* ---------------- stage runner ---------------- */}
       <div className="grid grid-2 mb-16" style={{ gridTemplateColumns: '1.05fr 0.95fr' }}>
         <Panel
@@ -327,7 +337,7 @@ export default function PlanningEnginePage() {
               </div>
 
               <div className="ba-card after">
-                <div className="section-label">After — AI-coordinated planning</div>
+                <div className="section-label">After — coordinated planning</div>
                 <div className="ba-value" style={{ color: '#6ed49a' }}>{result.metrics.afterHours} hr</div>
                 <div className="tiny dim">Total block time across {result.metrics.blocksAfter} coordinated blocks</div>
                 <div className="divider" style={{ margin: '10px 0' }} />

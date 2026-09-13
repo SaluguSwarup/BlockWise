@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    # Postgres is here ready for Team A's Day-1 tests (R7) — nothing consumes it yet.
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: blockwise
+          POSTGRES_PASSWORD: blockwise
+          POSTGRES_DB: blockwise
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install root dependencies
+        run: npm install
+
+      - name: Install backend dependencies
+        run: npm install
+        working-directory: backend
+
+      - name: Regenerate fixtures and check they are up to date
+        run: |
+          npm run fixtures
+          git diff --exit-code -- src/mocks || (echo "::error::src/mocks/*.json is out of date — run 'npm run fixtures' and commit the result" && exit 1)
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Build backend
+        run: node -e "require('node:child_process').execSync('node --check server.js', { cwd: 'backend', stdio: 'inherit' })"

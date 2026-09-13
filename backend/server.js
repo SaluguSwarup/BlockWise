@@ -1,17 +1,25 @@
 /**
- * BlockWise API — service skeleton.
+ * BlockWise API — integrator-owned shell (R5).
  *
- * The block-planning logic currently runs client-side in the SPA
- * (src/lib/planningEngine.js). This service exists so the two-tier
- * architecture and the deployment pipeline are in place from day one:
- * when the real AI / optimisation service is built, it slots in behind
- * POST /api/plan and the frontend just points VITE_API_URL here.
+ * This file is frozen: adding a team's API area means adding backend/modules/<team>/index.js,
+ * never editing this file. See backend/lib/registerModules.js and docs/ownership.md.
+ *
+ * The block-planning logic currently runs against a frozen fixture in the SPA
+ * (src/mocks/plan.json). This service exists so the two-tier architecture and the deployment
+ * pipeline are in place from day one: when the real engine is wired in (C7), it slots in behind
+ * POST /api/plan (backend/modules/team-c/) and the frontend just points VITE_API_URL here.
  */
 
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import express from 'express';
 import cors from 'cors';
+import { ok } from './lib/envelope.js';
+import { registerModules } from './lib/registerModules.js';
 
-const app = express();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export const app = express();
 const PORT = process.env.PORT || 4000;
 const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || '*';
 
@@ -43,27 +51,31 @@ app.get('/health', (_req, res) => {
 });
 
 app.get('/api/version', (_req, res) => {
-  res.json(info);
+  res.json(ok(info));
 });
 
 /** Server time — used by the frontend to prove the API is reachable. */
 app.get('/api/time', (_req, res) => {
-  res.json({ ...info, time: clock() });
+  res.json(ok({ ...info, time: clock() }));
 });
 
-/**
- * Stub — the real optimiser plugs in here. It should accept the selected
- * block requests and return the { blocks, metrics, clusters } shape that
- * runPlanner() produces today.
- */
-app.post('/api/plan', (_req, res) => {
-  res.status(501).json({
-    error: 'not_implemented',
-    note:
-      'Planning currently runs client-side in the SPA. This endpoint is the integration point for the real optimiser.',
+/** Which team modules are mounted — exposed for /dev/data's reachability check and for tests. */
+let mountedModules = [];
+export async function ready() {
+  mountedModules = await registerModules(app, path.join(__dirname, 'modules'));
+  return mountedModules;
+}
+app.get('/api/_modules', (_req, res) => {
+  res.json(ok({ mounted: mountedModules }));
+});
+
+// Only bind a port when run directly (`node server.js`), never when imported by tests.
+const isMain = process.argv[1] && path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1]);
+if (isMain) {
+  ready().then((mounted) => {
+    app.listen(PORT, () => {
+      console.log(`blockwise-api listening on :${PORT} (CORS origin: ${FRONTEND_ORIGIN})`);
+      console.log(`Mounted modules: ${mounted.join(', ') || '(none yet)'}`);
+    });
   });
-});
-
-app.listen(PORT, () => {
-  console.log(`blockwise-api listening on :${PORT} (CORS origin: ${FRONTEND_ORIGIN})`);
-});
+}

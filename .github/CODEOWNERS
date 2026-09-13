@@ -1,0 +1,33 @@
+# BlockWise CODEOWNERS — mirrors docs/ownership.md
+#
+# Fill in the @handle placeholders once GitHub usernames are known. A pull request touching a
+# path outside its team's rows here is flagged automatically for review by that path's owner.
+
+# Frozen — integrator only
+/packages/contracts/           @integrator
+/backend/server.js             @integrator
+/backend/lib/                  @integrator
+/src/mocks/                    @integrator
+/src/dev/flag.js               @integrator
+/src/dev/index.jsx             @integrator
+/scripts/                      @integrator
+/.github/                      @integrator
+/docs/                         @integrator
+
+# Team A — Data & Track Intelligence
+/backend/modules/team-a/       @team-a
+/src/dev/team-a/               @team-a
+
+# Team B — Product Application
+/backend/modules/team-b/       @team-b
+/src/App.jsx                   @team-b
+/src/context/                  @team-b
+/src/pages/                    @team-b
+/src/components/               @team-b
+/src/lib/planningInput.js      @team-b
+/src/lib/engineStages.js       @team-b
+
+# Team C — Planning & Optimisation
+/backend/modules/team-c/       @team-c
+/packages/engine/              @team-c
+/src/dev/team-c/               @team-c

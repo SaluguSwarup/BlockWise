@@ -224,17 +224,36 @@ Bands: **CRITICAL** ≥ 85 · **HIGH** ≥ 70 · **MEDIUM** ≥ 50 · **LOW** be
 
 ## Project structure
 
+Restructured for the SIH build-out (three teams + an integrator — see `BlockWise.md` for the
+full plan). The frontend, the planning engine and the backend are now three separately owned
+areas with a frozen contract between them; `docs/ownership.md` is the authoritative map.
+
 ```
+packages/
+  contracts/               R2 — frozen response envelope, record shapes, PlanningInput/Output,
+                            ScoringInput/Output (docs/*.md) + zero-dependency validators (src/)
+  engine/                  R4 — @blockwise/engine: the planning logic extracted out of the
+                            frontend, split into a frozen scorer interface (deterministic
+                            placeholder, not a trained model) and the optimiser
+    src/scoring/           placeholder scorer + the score(ScoringInput) → ScoringOutput interface
+    src/optimiser/         clustering, window ranking, merging, metrics — never computes a score
+    scenarios/             Team C's synthetic scenario library (empty — built Day 1, C1)
+backend/
+  server.js, lib/          R5 — integrator-owned shell; auto-mounts modules/*, never edited to
+                            add a route
+  modules/team-{a,b,c}/    each team's own Express router — A's real endpoints, B's auth
+                            foothold, C's /api/plan
 src/
-  data/                    mock datasets — the swap point for Milestone 2
-    network.js             division, 4 corridors, 21 stations, schematic SVG geometry
-    tracks.js              20 sections: health, status, ENGG/SNT/TRD tabs, defects, overdue
-    trains.js              WTT, goods forecast, COA windows, corridor status
-    blockRequests.js       19 BDMS block demands + weights (criticality/urgency/safety)
-    tickets.js             inspection tickets, statuses, reason options
-    plans.js              12 sanctioned blocks, demo users, source systems, KPIs
+  data/                    today's mock datasets — read by scripts/build-fixtures.mjs until A1/A2
+                            replace them with a real database
+  mocks/                   R3 — Team B's frozen fixtures (generated — see src/mocks/README.md);
+                            plan.json is the strict canned planner result
+  dev/                     R6 — /dev/data (team-a/) and /dev/planner (team-c/), dev-only, absent
+                            from a production build
   lib/
-    planningEngine.js      scoring · merging · window ranking · metrics · stages
+    planningInput.js       converts src/data/* into a PlanningInput (shared by /dev/planner and
+                            the fixture script)
+    engineStages.js        presentation-only stage list for the planning-run animation
     format.js              date, week/month, duration and percentage helpers
   context/
     AppState.jsx           single store: role, tickets, requests, plan, toasts
@@ -248,24 +267,39 @@ src/
   styles/
     app.css                design tokens + primitives
     views.css              view-specific styling
+docs/                      ownership, workflow, integration log (R1/R8)
+.github/                   CI, CODEOWNERS, PR template (R7/R8)
 ```
 
 Routes: `/` role selection · `/app/dashboard` · `/app/network` · `/app/tickets` ·  
-`/app/requests`* · `/app/engine`* · `/app/schedule`* · `/app/operations`*  (* admin only).
+`/app/requests`* · `/app/engine`* · `/app/schedule`* · `/app/operations`*  (* admin only) ·
+`/dev/data`, `/dev/planner` (development builds only).
 
 ---
 
-## Where real functionality plugs in (Milestone 2)
+## Where real functionality plugs in
 
-The frontend is built so the second milestone is an integration job, not a rewrite:
+The three-team plan (`BlockWise.md`) is the current source of truth for how each piece below
+becomes real. In outline:
 
-- **Data** — every file in `src/data/` is a pure export with no logic. A fetch/service layer returning the same shapes replaces them file by file: `tracks.js` → TMS/SMMS/TDMS, `trains.js` → COA, `blockRequests.js` → BDMS.
+- **Data** — every file in `src/data/` is a pure export with no logic. Team A's real database and
+  endpoints (`A1`–`A10`) replace them one endpoint at a time; `src/mocks/` is Team B's frozen
+  stand-in until each one ships, in the exact same shape (`packages/contracts/docs/records.md`).
 
-- **Engine** — the UI consumes exactly two entry points: `scoreRequest(request)` and `runPlanner(selectedRequests)`. Point those at the real optimisation/ML service, keep the return shapes, and the entire planning experience works unchanged — including the reasoning panels, which render whatever factors and explanations the service returns.
+- **Engine** — `@blockwise/engine` (`packages/engine/`) takes a `PlanningInput` and returns a
+  `PlanningOutput` (`packages/contracts/docs/planning.md`). Its scoring stage is a frozen
+  interface with a deterministic placeholder behind it today — not a trained ML model, see
+  `packages/contracts/docs/scoring.md` — and its optimiser never computes or overrides a score.
+  Team C builds `C1`–`C10` on top of this boundary; the UI keeps working because `POST /api/plan`
+  (once C7 ships it) returns the same shape the canned fixture does today.
 
-- **Auth** — `login(role)` in `AppState.jsx` is the only place a session is created; the route guards in `App.jsx` already enforce role separation. Add a JWT/session layer there.
+- **Auth** — `login(role)` in `AppState.jsx` is a placeholder; `backend/lib/auth.js` already
+  defines the real shape (`requireAuth`/`requireRole`) that Team B's `B2` plugs a real verifier
+  into, without any other module changing.
 
-- **State** — tickets, request status transitions and plan commits all flow through `AppStateProvider`, so database persistence is added in one file.
+- **State** — tickets, request status transitions and plan commits all flow through
+  `AppStateProvider`; Team A's `A9` (`GET/POST/PATCH /api/tickets`, `PATCH /api/requests`,
+  `GET /api/blocks`) makes those writes persistent.
 
 ---
 

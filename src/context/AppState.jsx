@@ -1,8 +1,13 @@
 import { createContext, useCallback, useContext, useMemo, useState } from 'react';
-import { BLOCK_REQUESTS, REQUEST_STATUS } from '../data/blockRequests.js';
+import { REQUEST_STATUS } from '../data/blockRequests.js';
 import { INSPECTION_TICKETS, TICKET_STATUS } from '../data/tickets.js';
 import { SANCTIONED_BLOCKS, USERS } from '../data/plans.js';
 import { TRACKS } from '../data/tracks.js';
+// Frozen fixture (R3) — requests carry a baked `priority` (the ScoringOutput score record) so
+// nothing in the frontend computes a score itself. See src/mocks/README.md.
+import REQUESTS_FIXTURE from '../mocks/requests.json';
+
+const BLOCK_REQUESTS = REQUESTS_FIXTURE.data;
 
 const AppStateContext = createContext(null);
 
@@ -46,7 +51,7 @@ export function AppStateProvider({ children }) {
   const commitPlan = useCallback((result) => {
     setPlanResult(result);
     setPlanBlocks((prev) => {
-      const withoutOld = prev.filter((b) => b.source !== 'AI-OPTIMISED');
+      const withoutOld = prev.filter((b) => b.source !== 'OPTIMISED');
       return [...withoutOld, ...result.blocks];
     });
     const ids = result.blocks.flatMap((b) => b.tasks.map((t) => t.requestId));

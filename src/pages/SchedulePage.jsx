@@ -13,16 +13,16 @@ import BlockDetail from '../components/planning/BlockDetail.jsx';
 const TODAY = '2026-09-06';
 
 function BlockCard({ block, onClick }) {
-  const isAI = block.source === 'AI-OPTIMISED';
+  const isOptimised = block.source === 'OPTIMISED';
   return (
     <div
-      className={`blk-card ${isAI ? 'ai' : 'sanctioned'} ${block.priority === 'CRITICAL' ? 'crit' : ''}`}
+      className={`blk-card ${isOptimised ? 'ai' : 'sanctioned'} ${block.priority === 'CRITICAL' ? 'crit' : ''}`}
       onClick={() => onClick(block)}
     >
       <div className="row gap-6">
         <span className="bs mono">{block.section}</span>
         <span className="spacer" />
-        {isAI && <span className="tiny" style={{ color: 'var(--accent)' }}>AI</span>}
+        {isOptimised && <span className="tiny" style={{ color: 'var(--accent)' }}>OPT</span>}
       </div>
       <div className="bt">{block.start}–{block.end} · {formatDuration(block.durationMin)}</div>
       <div className="row gap-4 mt-4 wrap">
@@ -53,8 +53,8 @@ export default function SchedulePage() {
   const blocks = useMemo(() => planBlocks.filter((b) => {
     if (deptFilter !== 'ALL' && !b.depts.includes(deptFilter)) return false;
     if (corridorFilter !== 'ALL' && b.corridor !== corridorFilter) return false;
-    if (sourceFilter === 'AI' && b.source !== 'AI-OPTIMISED') return false;
-    if (sourceFilter === 'SANCTIONED' && b.source === 'AI-OPTIMISED') return false;
+    if (sourceFilter === 'OPTIMISED' && b.source !== 'OPTIMISED') return false;
+    if (sourceFilter === 'SANCTIONED' && b.source === 'OPTIMISED') return false;
     return true;
   }), [planBlocks, deptFilter, corridorFilter, sourceFilter]);
 
@@ -94,7 +94,7 @@ export default function SchedulePage() {
 
   const scope = mode === 'week' ? weekBlocks : monthBlocks;
   const scopeMinutes = scope.reduce((s, b) => s + b.durationMin, 0);
-  const aiBlocks = scope.filter((b) => b.source === 'AI-OPTIMISED');
+  const optimisedBlocks = scope.filter((b) => b.source === 'OPTIMISED');
   const multiDept = scope.filter((b) => b.depts.length > 1);
 
   return (
@@ -103,7 +103,7 @@ export default function SchedulePage() {
         <div>
           <div className="page-title">Block Schedule</div>
           <div className="page-sub">
-            Sanctioned and AI-optimised blocks across short-term (weekly) and long-term (monthly) horizons
+            Sanctioned and optimised blocks across short-term (weekly) and long-term (monthly) horizons
           </div>
         </div>
         <span className="spacer" />
@@ -115,7 +115,7 @@ export default function SchedulePage() {
       </div>
 
       <div className="grid grid-4 mb-16">
-        <Stat tone="accent" label={mode === 'week' ? 'Blocks this week' : 'Blocks this month'} value={scope.length} foot={`${aiBlocks.length} AI-optimised`} />
+        <Stat tone="accent" label={mode === 'week' ? 'Blocks this week' : 'Blocks this month'} value={scope.length} foot={`${optimisedBlocks.length} optimised`} />
         <Stat tone="info" label="Total block time" value={(scopeMinutes / 60).toFixed(1)} unit=" hr" foot="Corridor time committed" />
         <Stat tone="ok" label="Multi-department blocks" value={multiDept.length} foot="Coordinated across departments" />
         <Stat
@@ -159,7 +159,7 @@ export default function SchedulePage() {
             </select>
             <select className="select" style={{ width: 165, padding: '5px 9px' }} value={sourceFilter} onChange={(e) => setSourceFilter(e.target.value)}>
               <option value="ALL">All blocks</option>
-              <option value="AI">AI-optimised only</option>
+              <option value="OPTIMISED">Optimised only</option>
               <option value="SANCTIONED">Previously sanctioned</option>
             </select>
           </div>
@@ -216,7 +216,7 @@ export default function SchedulePage() {
                     <td className="tiny" style={{ maxWidth: 260 }}>{b.tasks.map((t) => t.activity).join(' + ')}</td>
                     <td>{b.priorityScore ? <ScorePill score={b.priorityScore} band={b.priority} /> : <Badge>{b.priority}</Badge>}</td>
                     <td><Badge>{b.state}</Badge></td>
-                    <td className="tiny">{b.source === 'AI-OPTIMISED' ? <Badge tone="ok">AI</Badge> : <span className="dim">BDMS</span>}</td>
+                    <td className="tiny">{b.source === 'OPTIMISED' ? <Badge tone="ok">OPT</Badge> : <span className="dim">BDMS</span>}</td>
                   </tr>
                 ))}
                 {weekBlocks.length === 0 && (
@@ -251,7 +251,7 @@ export default function SchedulePage() {
                       {dayBlocks.map((b) => (
                         <div
                           key={b.id}
-                          className={`month-chip ${b.priority === 'CRITICAL' ? 'crit' : ''} ${b.source !== 'AI-OPTIMISED' ? 'sanctioned' : ''}`}
+                          className={`month-chip ${b.priority === 'CRITICAL' ? 'crit' : ''} ${b.source !== 'OPTIMISED' ? 'sanctioned' : ''}`}
                           onClick={() => setOpenBlock(b)}
                           title={`${b.id} · ${b.section} · ${b.start}–${b.end} · ${b.depts.map((d) => DEPARTMENTS[d].abbr).join(', ')}`}
                         >
@@ -263,7 +263,7 @@ export default function SchedulePage() {
                 })}
               </div>
               <div className="row gap-16 mt-12 tiny dim wrap">
-                <span className="row gap-6"><i style={{ width: 10, height: 10, borderLeft: '2px solid var(--accent)', background: 'var(--bg-input)', display: 'inline-block' }} /> AI-optimised block</span>
+                <span className="row gap-6"><i style={{ width: 10, height: 10, borderLeft: '2px solid var(--accent)', background: 'var(--bg-input)', display: 'inline-block' }} /> Optimised block</span>
                 <span className="row gap-6"><i style={{ width: 10, height: 10, borderLeft: '2px solid var(--text-3)', background: 'var(--bg-input)', display: 'inline-block' }} /> Previously sanctioned block</span>
                 <span className="row gap-6"><i style={{ width: 10, height: 10, borderLeft: '2px solid var(--crit)', background: 'var(--bg-input)', display: 'inline-block' }} /> Critical priority</span>
               </div>

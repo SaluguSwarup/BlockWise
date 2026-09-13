@@ -1,0 +1,11 @@
+{
+  "name": "@blockwise/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BlockWise planning engine — extracted from the frontend prototype (R4). Takes a PlanningInput and returns a PlanningOutput. Forbidden from importing the database, the backend, or the frontend.",
+  "main": "src/index.js",
+  "dependencies": {
+    "@blockwise/contracts": "file:../contracts"
+  }
+}

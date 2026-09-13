@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p __TRACKED_VAR__/fixtures-check)",
+      "Bash(cp src/mocks/*.json __TRACKED_VAR__/fixtures-check/run1/)",
+      "Bash(npm run *)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(pkill -f \"npm run dev\")",
+      "Bash(pkill -f \"vite\")",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Process npm -ErrorAction SilentlyContinue)"
+    ]
+  }
+}

@@ -1,0 +1,1739 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "id": "BDMS/2026/BR-0412",
+      "section": "SEC-104",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "Through rail renewal — 380 m",
+      "description": "Replacement of fractured 52 kg rail panel at Km 141/6 with 60 kg 90 UTS rail, including destressing and welding.",
+      "requestedDate": "2026-09-12",
+      "requestedStart": "01:45",
+      "requestedEnd": "04:30",
+      "durationMin": 165,
+      "criticality": "CRITICAL",
+      "urgency": "IMMEDIATE",
+      "safetyImpact": "HIGH",
+      "assetImpact": 92,
+      "assetImpactNote": "Removes PSR 60 kmph; restores 130 kmph sectional speed",
+      "overdueDays": 22,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEN/Co ALJN",
+      "requestedOn": "02 Sep 2026, 11:20",
+      "linkedDefects": [
+        "TMS-DF-2101",
+        "TMS-DF-2118"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 3 + 2 welders",
+      "machinery": "Rail cutting & welding plant, T-28 tamper",
+      "powerBlock": true,
+      "minDurationMin": 150,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0412",
+        "urgency": 92,
+        "criticality": 92,
+        "priority": 92,
+        "band": "CRITICAL",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 100,
+            "contribution": 24,
+            "note": "CRITICAL activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DEN/Co ALJN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 52,
+            "contribution": 7.3,
+            "note": "Section health 48% (deficit 52 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 99,
+            "contribution": 13.9,
+            "note": "Overdue by 22 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 92,
+            "contribution": 11,
+            "note": "92/100 — Removes PSR 60 kmph; restores 130 kmph sectional speed"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0418",
+      "section": "SEC-104",
+      "dept": "TRD",
+      "system": "TDMS",
+      "activity": "OHE insulator replacement — mast 141/12",
+      "description": "Replacement of flashed-over 9-tonne insulator and cantilever inspection over 400 m.",
+      "requestedDate": "2026-09-12",
+      "requestedStart": "02:30",
+      "requestedEnd": "04:00",
+      "durationMin": 90,
+      "criticality": "HIGH",
+      "urgency": "HIGH",
+      "safetyImpact": "HIGH",
+      "assetImpact": 74,
+      "assetImpactNote": "Eliminates recurring OHE trip risk on UP line",
+      "overdueDays": 6,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEE/TRD TDL",
+      "requestedOn": "03 Sep 2026, 09:05",
+      "linkedDefects": [
+        "TDMS-DF-0447"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "OHE gang + 1 JE",
+      "machinery": "Tower wagon (8-wheeler)",
+      "powerBlock": true,
+      "minDurationMin": 80,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0418",
+        "urgency": 70,
+        "criticality": 70,
+        "priority": 70,
+        "band": "HIGH",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEE/TRD TDL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 52,
+            "contribution": 7.3,
+            "note": "Section health 48% (deficit 52 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 27,
+            "contribution": 3.8,
+            "note": "Overdue by 6 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 74,
+            "contribution": 8.9,
+            "note": "74/100 — Eliminates recurring OHE trip risk on UP line"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0423",
+      "section": "SEC-104",
+      "dept": "SNT",
+      "system": "SMMS",
+      "activity": "Point machine 24A overhaul",
+      "description": "Overhaul of IRS point machine 24A with axle counter AC-17 reset-fault rectification.",
+      "requestedDate": "2026-09-12",
+      "requestedStart": "03:00",
+      "requestedEnd": "04:15",
+      "durationMin": 75,
+      "criticality": "HIGH",
+      "urgency": "HIGH",
+      "safetyImpact": "HIGH",
+      "assetImpact": 68,
+      "assetImpactNote": "Restores full route setting at ALJN south end",
+      "overdueDays": 12,
+      "status": "PENDING",
+      "requestedBy": "Sr.DSTE ALJN",
+      "requestedOn": "03 Sep 2026, 15:42",
+      "linkedDefects": [
+        "SMMS-DF-0884",
+        "SMMS-DF-0891"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "S&T gang + 1 SSE",
+      "machinery": "Point machine test kit",
+      "powerBlock": false,
+      "minDurationMin": 70,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0423",
+        "urgency": 73,
+        "criticality": 73,
+        "priority": 73,
+        "band": "HIGH",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DSTE ALJN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 52,
+            "contribution": 7.3,
+            "note": "Section health 48% (deficit 52 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 54,
+            "contribution": 7.6,
+            "note": "Overdue by 12 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 68,
+            "contribution": 8.2,
+            "note": "68/100 — Restores full route setting at ALJN south end"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0431",
+      "section": "SEC-204",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "Weld renewal + through tamping",
+      "description": "Renewal of 3 failed AT welds at Km 118/4 followed by tamping over 2 km and ballast make-up.",
+      "requestedDate": "2026-09-13",
+      "requestedStart": "00:30",
+      "requestedEnd": "03:30",
+      "durationMin": 180,
+      "criticality": "CRITICAL",
+      "urgency": "IMMEDIATE",
+      "safetyImpact": "HIGH",
+      "assetImpact": 88,
+      "assetImpactNote": "Removes PSR 45 kmph over 1.4 km",
+      "overdueDays": 16,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEN/West RE",
+      "requestedOn": "03 Sep 2026, 10:10",
+      "linkedDefects": [
+        "TMS-DF-2340",
+        "TMS-DF-2344"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 6 + 2 welders",
+      "machinery": "UNIMAT tamper, BCM standby",
+      "powerBlock": true,
+      "minDurationMin": 165,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0431",
+        "urgency": 87,
+        "criticality": 87,
+        "priority": 87,
+        "band": "CRITICAL",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 100,
+            "contribution": 24,
+            "note": "CRITICAL activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DEN/West RE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 43,
+            "contribution": 6,
+            "note": "Section health 57% (deficit 43 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 72,
+            "contribution": 10.1,
+            "note": "Overdue by 16 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 88,
+            "contribution": 10.6,
+            "note": "88/100 — Removes PSR 45 kmph over 1.4 km"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0436",
+      "section": "SEC-204",
+      "dept": "TRD",
+      "system": "TDMS",
+      "activity": "OHE dropper renewal — 1.2 km",
+      "description": "Renewal of droppers over Km 118/2–119/6 following four snapping incidents in 60 days.",
+      "requestedDate": "2026-09-13",
+      "requestedStart": "01:00",
+      "requestedEnd": "02:30",
+      "durationMin": 90,
+      "criticality": "HIGH",
+      "urgency": "IMMEDIATE",
+      "safetyImpact": "HIGH",
+      "assetImpact": 79,
+      "assetImpactNote": "Prevents OHE breakdown risk on a Rajdhani route",
+      "overdueDays": 11,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEE/TRD AWR",
+      "requestedOn": "04 Sep 2026, 08:35",
+      "linkedDefects": [
+        "TDMS-DF-0470"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "OHE gang",
+      "machinery": "Tower wagon",
+      "powerBlock": true,
+      "minDurationMin": 85,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0436",
+        "urgency": 77,
+        "criticality": 77,
+        "priority": 77,
+        "band": "HIGH",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DEE/TRD AWR"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 43,
+            "contribution": 6,
+            "note": "Section health 57% (deficit 43 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 50,
+            "contribution": 6.9,
+            "note": "Overdue by 11 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 79,
+            "contribution": 9.5,
+            "note": "79/100 — Prevents OHE breakdown risk on a Rajdhani route"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0440",
+      "section": "SEC-302",
+      "dept": "SNT",
+      "system": "SMMS",
+      "activity": "Signal cable replacement — 800 m",
+      "description": "Replacement of signalling cable with IR below 1 M-ohm between Km 52/0 and 52/8.",
+      "requestedDate": "2026-09-14",
+      "requestedStart": "01:00",
+      "requestedEnd": "03:30",
+      "durationMin": 150,
+      "criticality": "CRITICAL",
+      "urgency": "IMMEDIATE",
+      "safetyImpact": "HIGH",
+      "assetImpact": 84,
+      "assetImpactNote": "Removes risk of signal failure / wrong-side failure",
+      "overdueDays": 19,
+      "status": "PENDING",
+      "requestedBy": "Sr.DSTE GJL",
+      "requestedOn": "01 Sep 2026, 16:20",
+      "linkedDefects": [
+        "SMMS-DF-0866"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "S&T gang + cable party",
+      "machinery": "Cable trenching set",
+      "powerBlock": false,
+      "minDurationMin": 140,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0440",
+        "urgency": 87,
+        "criticality": 87,
+        "priority": 87,
+        "band": "CRITICAL",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 100,
+            "contribution": 24,
+            "note": "CRITICAL activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 100,
+            "contribution": 20,
+            "note": "IMMEDIATE — raised by Sr.DSTE GJL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 36,
+            "contribution": 5,
+            "note": "Section health 64% (deficit 36 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 86,
+            "contribution": 12,
+            "note": "Overdue by 19 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 84,
+            "contribution": 10.1,
+            "note": "84/100 — Removes risk of signal failure / wrong-side failure"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0444",
+      "section": "SEC-302",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "ERC fastening renewal — 2.4 km",
+      "description": "Renewal of loose elastic rail clips and rubber pads over Km 52–55.",
+      "requestedDate": "2026-09-14",
+      "requestedStart": "02:00",
+      "requestedEnd": "03:15",
+      "durationMin": 75,
+      "criticality": "MEDIUM",
+      "urgency": "NORMAL",
+      "safetyImpact": "MEDIUM",
+      "assetImpact": 52,
+      "assetImpactNote": "Improves track stability, arrests TQI deterioration",
+      "overdueDays": 4,
+      "status": "PENDING",
+      "requestedBy": "SSE/P.Way/GJL",
+      "requestedOn": "04 Sep 2026, 12:15",
+      "linkedDefects": [
+        "TMS-DF-2288"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 7",
+      "machinery": "Rail clip applicator",
+      "powerBlock": false,
+      "minDurationMin": 70,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0444",
+        "urgency": 45,
+        "criticality": 45,
+        "priority": 45,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/P.Way/GJL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 36,
+            "contribution": 5,
+            "note": "Section health 64% (deficit 36 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 18,
+            "contribution": 2.5,
+            "note": "Overdue by 4 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 52,
+            "contribution": 6.2,
+            "note": "52/100 — Improves track stability, arrests TQI deterioration"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0447",
+      "section": "SEC-203",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "Rail grinding — GMT cycle",
+      "description": "Preventive rail grinding over Km 62/4–68/0 to arrest side wear on the high-goods-density section.",
+      "requestedDate": "2026-09-15",
+      "requestedStart": "23:30",
+      "requestedEnd": "02:30",
+      "durationMin": 180,
+      "criticality": "MEDIUM",
+      "urgency": "HIGH",
+      "safetyImpact": "MEDIUM",
+      "assetImpact": 61,
+      "assetImpactNote": "Extends rail service life by an estimated 4 years",
+      "overdueDays": 9,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEN/West RE",
+      "requestedOn": "02 Sep 2026, 14:50",
+      "linkedDefects": [
+        "TMS-DF-2312"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Machine crew",
+      "machinery": "Rail grinding machine RGI-96",
+      "powerBlock": false,
+      "minDurationMin": 170,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0447",
+        "urgency": 54,
+        "criticality": 54,
+        "priority": 54,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEN/West RE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 29,
+            "contribution": 4.1,
+            "note": "Section health 71% (deficit 29 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 41,
+            "contribution": 5.7,
+            "note": "Overdue by 9 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 61,
+            "contribution": 7.3,
+            "note": "61/100 — Extends rail service life by an estimated 4 years"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0452",
+      "section": "SEC-203",
+      "dept": "TRD",
+      "system": "TDMS",
+      "activity": "Contact wire wear survey + spot renewal",
+      "description": "Wear measurement over 6 km with spot renewal of contact wire at Km 65/2 (22% wear).",
+      "requestedDate": "2026-09-15",
+      "requestedStart": "00:30",
+      "requestedEnd": "02:00",
+      "durationMin": 90,
+      "criticality": "MEDIUM",
+      "urgency": "NORMAL",
+      "safetyImpact": "MEDIUM",
+      "assetImpact": 57,
+      "assetImpactNote": "Avoids unplanned OHE failure on goods corridor",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEE/TRD RE",
+      "requestedOn": "05 Sep 2026, 09:40",
+      "linkedDefects": [
+        "TDMS-DF-0461"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "OHE gang",
+      "machinery": "Tower wagon + wear gauge",
+      "powerBlock": true,
+      "minDurationMin": 85,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0452",
+        "urgency": 43,
+        "criticality": 43,
+        "priority": 43,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by Sr.DEE/TRD RE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 29,
+            "contribution": 4.1,
+            "note": "Section health 71% (deficit 29 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 57,
+            "contribution": 6.8,
+            "note": "57/100 — Avoids unplanned OHE failure on goods corridor"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0455",
+      "section": "SEC-404",
+      "dept": "TRD",
+      "system": "TDMS",
+      "activity": "Neutral section assembly overhaul",
+      "description": "Replacement of worn PTFE plates and realignment of neutral section at Km 158/4 (arcing reported).",
+      "requestedDate": "2026-09-16",
+      "requestedStart": "00:45",
+      "requestedEnd": "03:15",
+      "durationMin": 150,
+      "criticality": "HIGH",
+      "urgency": "HIGH",
+      "safetyImpact": "HIGH",
+      "assetImpact": 76,
+      "assetImpactNote": "Eliminates arcing risk on Delhi–Chennai trunk route",
+      "overdueDays": 8,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEE/TRD GWL",
+      "requestedOn": "03 Sep 2026, 17:05",
+      "linkedDefects": [
+        "TDMS-DF-0490"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "OHE gang + JE/TRD",
+      "machinery": "Tower wagon, alignment jig",
+      "powerBlock": true,
+      "minDurationMin": 140,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0455",
+        "urgency": 68,
+        "criticality": 68,
+        "priority": 68,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TDMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEE/TRD GWL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 31,
+            "contribution": 4.3,
+            "note": "Section health 69% (deficit 31 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 36,
+            "contribution": 5,
+            "note": "Overdue by 8 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 76,
+            "contribution": 9.1,
+            "note": "76/100 — Eliminates arcing risk on Delhi–Chennai trunk route"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0459",
+      "section": "SEC-404",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "Ballast cleaning — Km 152/0–156/0",
+      "description": "Shoulder ballast cleaning and make-up over 4 km of fouled formation.",
+      "requestedDate": "2026-09-16",
+      "requestedStart": "01:30",
+      "requestedEnd": "03:00",
+      "durationMin": 90,
+      "criticality": "MEDIUM",
+      "urgency": "NORMAL",
+      "safetyImpact": "LOW",
+      "assetImpact": 48,
+      "assetImpactNote": "Improves drainage before the next monsoon cycle",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "SSE/P.Way/GWL",
+      "requestedOn": "05 Sep 2026, 11:30",
+      "linkedDefects": [
+        "TMS-DF-2362"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 9",
+      "machinery": "Shoulder ballast cleaning machine",
+      "powerBlock": false,
+      "minDurationMin": 85,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0459",
+        "urgency": 37,
+        "criticality": 37,
+        "priority": 37,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/P.Way/GWL"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 30,
+            "contribution": 4.8,
+            "note": "LOW safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 31,
+            "contribution": 4.3,
+            "note": "Section health 69% (deficit 31 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 48,
+            "contribution": 5.8,
+            "note": "48/100 — Improves drainage before the next monsoon cycle"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0463",
+      "section": "SEC-202",
+      "dept": "SNT",
+      "system": "SMMS",
+      "activity": "LC-24 gate interlocking service",
+      "description": "Servicing of the electrically operated lifting barrier and gate interlocking at LC-24.",
+      "requestedDate": "2026-09-16",
+      "requestedStart": "01:30",
+      "requestedEnd": "02:45",
+      "durationMin": 75,
+      "criticality": "MEDIUM",
+      "urgency": "NORMAL",
+      "safetyImpact": "HIGH",
+      "assetImpact": 55,
+      "assetImpactNote": "Level crossing safety compliance (Sch. of Dimensions)",
+      "overdueDays": 3,
+      "status": "PENDING",
+      "requestedBy": "Sr.DSTE GGN",
+      "requestedOn": "04 Sep 2026, 13:00",
+      "linkedDefects": [
+        "SMMS-DF-0902"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "S&T gang",
+      "machinery": "Gate mechanism spares",
+      "powerBlock": false,
+      "minDurationMin": 70,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0463",
+        "urgency": 50,
+        "criticality": 50,
+        "priority": 50,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by Sr.DSTE GGN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 21,
+            "contribution": 2.9,
+            "note": "Section health 79% (deficit 21 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 14,
+            "contribution": 1.9,
+            "note": "Overdue by 3 days"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 55,
+            "contribution": 6.6,
+            "note": "55/100 — Level crossing safety compliance (Sch. of Dimensions)"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0466",
+      "section": "SEC-202",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "LC-24 road surface & check-rail renewal",
+      "description": "Renewal of level crossing road surface panels and check rails at LC-24.",
+      "requestedDate": "2026-09-16",
+      "requestedStart": "01:00",
+      "requestedEnd": "02:30",
+      "durationMin": 90,
+      "criticality": "MEDIUM",
+      "urgency": "NORMAL",
+      "safetyImpact": "MEDIUM",
+      "assetImpact": 46,
+      "assetImpactNote": "Reduces road-user risk and shock loading on track",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "SSE/P.Way/GGN",
+      "requestedOn": "05 Sep 2026, 10:20",
+      "linkedDefects": [],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 2",
+      "machinery": "Road panel handling gear",
+      "powerBlock": false,
+      "minDurationMin": 85,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0466",
+        "urgency": 40,
+        "criticality": 40,
+        "priority": 40,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 52,
+            "contribution": 12.5,
+            "note": "MEDIUM activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/P.Way/GGN"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 21,
+            "contribution": 2.9,
+            "note": "Section health 79% (deficit 21 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 46,
+            "contribution": 5.5,
+            "note": "46/100 — Reduces road-user risk and shock loading on track"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0470",
+      "section": "SEC-102",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "USFD weld renewal — 2 locations",
+      "description": "Renewal of IMR/W classified welds at Km 61/3 detected in the last USFD run.",
+      "requestedDate": "2026-09-14",
+      "requestedStart": "02:00",
+      "requestedEnd": "04:00",
+      "durationMin": 120,
+      "criticality": "HIGH",
+      "urgency": "HIGH",
+      "safetyImpact": "HIGH",
+      "assetImpact": 71,
+      "assetImpactNote": "Prevents rail fracture on the highest-density section",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEN/Co GZB",
+      "requestedOn": "05 Sep 2026, 18:15",
+      "linkedDefects": [
+        "TMS-DF-2291"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Welding party",
+      "machinery": "AT welding portable plant",
+      "powerBlock": false,
+      "minDurationMin": 110,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0470",
+        "urgency": 62,
+        "criticality": 62,
+        "priority": 62,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEN/Co GZB"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 26,
+            "contribution": 3.6,
+            "note": "Section health 74% (deficit 26 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 71,
+            "contribution": 8.5,
+            "note": "71/100 — Prevents rail fracture on the highest-density section"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0474",
+      "section": "SEC-305",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "Br. 214 girder bearing replacement",
+      "description": "Replacement of displaced girder bearing at bridge no. 214, Km 198/2, with jacking arrangement.",
+      "requestedDate": "2026-09-18",
+      "requestedStart": "01:30",
+      "requestedEnd": "04:00",
+      "durationMin": 150,
+      "criticality": "HIGH",
+      "urgency": "HIGH",
+      "safetyImpact": "HIGH",
+      "assetImpact": 80,
+      "assetImpactNote": "Removes 30 kmph caution order over the bridge",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "AEN/Bridges BE",
+      "requestedOn": "06 Sep 2026, 07:20",
+      "linkedDefects": [
+        "TMS-DF-2355"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Bridge gang + AEN",
+      "machinery": "Hydraulic jacks 100 T",
+      "powerBlock": true,
+      "minDurationMin": 145,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0474",
+        "urgency": 63,
+        "criticality": 63,
+        "priority": 63,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by AEN/Bridges BE"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 100,
+            "contribution": 16,
+            "note": "HIGH safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 28,
+            "contribution": 3.9,
+            "note": "Section health 72% (deficit 28 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 80,
+            "contribution": 9.6,
+            "note": "80/100 — Removes 30 kmph caution order over the bridge"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0478",
+      "section": "SEC-303",
+      "dept": "SNT",
+      "system": "SMMS",
+      "activity": "Point 12B servicing",
+      "description": "Adjustment of stretcher bar play and lubrication of point 12B at Moradabad end.",
+      "requestedDate": "2026-09-19",
+      "requestedStart": "01:45",
+      "requestedEnd": "02:45",
+      "durationMin": 60,
+      "criticality": "LOW",
+      "urgency": "NORMAL",
+      "safetyImpact": "MEDIUM",
+      "assetImpact": 34,
+      "assetImpactNote": "Routine preventive maintenance",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "SSE/Signal/MB",
+      "requestedOn": "05 Sep 2026, 16:45",
+      "linkedDefects": [
+        "SMMS-DF-0921"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "S&T gang",
+      "machinery": "Standard tool kit",
+      "powerBlock": false,
+      "minDurationMin": 55,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0478",
+        "urgency": 33,
+        "criticality": 33,
+        "priority": 33,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 28,
+            "contribution": 6.7,
+            "note": "LOW activity as classified by SMMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 48,
+            "contribution": 9.6,
+            "note": "NORMAL — raised by SSE/Signal/MB"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 24,
+            "contribution": 3.4,
+            "note": "Section health 76% (deficit 24 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 34,
+            "contribution": 4.1,
+            "note": "34/100 — Routine preventive maintenance"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0481",
+      "section": "SEC-402",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "BCM deployment — deep screening 3 km",
+      "description": "Ballast cleaning machine deployment at Br. 88 approaches. Requires sole occupation of the section.",
+      "requestedDate": "2026-09-17",
+      "requestedStart": "22:00",
+      "requestedEnd": "04:00",
+      "durationMin": 360,
+      "criticality": "HIGH",
+      "urgency": "HIGH",
+      "safetyImpact": "MEDIUM",
+      "assetImpact": 83,
+      "assetImpactNote": "Completes the Br. 88 restoration package",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "Sr.DEN/Co AGC",
+      "requestedOn": "06 Sep 2026, 08:00",
+      "linkedDefects": [
+        "TMS-DF-2370"
+      ],
+      "compatibility": "EXCLUSIVE",
+      "exclusiveReason": "Track machine (BCM) occupies the full section — no other department can work alongside.",
+      "resources": "Machine crew + Gang 5",
+      "machinery": "BCM RM-80, muck disposal rakes",
+      "powerBlock": true,
+      "minDurationMin": 360,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0481",
+        "urgency": 60,
+        "criticality": 60,
+        "priority": 60,
+        "band": "MEDIUM",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 78,
+            "contribution": 18.7,
+            "note": "HIGH activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 76,
+            "contribution": 15.2,
+            "note": "HIGH — raised by Sr.DEN/Co AGC"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 60,
+            "contribution": 9.6,
+            "note": "MEDIUM safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 47,
+            "contribution": 6.6,
+            "note": "Section health 53% (deficit 47 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 83,
+            "contribution": 10,
+            "note": "83/100 — Completes the Br. 88 restoration package"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0484",
+      "section": "SEC-101",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "Deep screening — Km 12/0–14/0",
+      "description": "Routine deep screening of 2 km on the quadruple-line section, one line at a time.",
+      "requestedDate": "2026-09-18",
+      "requestedStart": "01:30",
+      "requestedEnd": "03:30",
+      "durationMin": 120,
+      "criticality": "LOW",
+      "urgency": "PLANNED",
+      "safetyImpact": "LOW",
+      "assetImpact": 30,
+      "assetImpactNote": "Preventive — section already in the Very Good TQI band",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "SSE/P.Way/NDLS",
+      "requestedOn": "05 Sep 2026, 12:35",
+      "linkedDefects": [],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 1",
+      "machinery": "Shoulder cleaning machine",
+      "powerBlock": false,
+      "minDurationMin": 110,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0484",
+        "urgency": 22,
+        "criticality": 22,
+        "priority": 22,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 28,
+            "contribution": 6.7,
+            "note": "LOW activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 24,
+            "contribution": 4.8,
+            "note": "PLANNED — raised by SSE/P.Way/NDLS"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 30,
+            "contribution": 4.8,
+            "note": "LOW safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 12,
+            "contribution": 1.7,
+            "note": "Section health 88% (deficit 12 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 30,
+            "contribution": 3.6,
+            "note": "30/100 — Preventive — section already in the Very Good TQI band"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    },
+    {
+      "id": "BDMS/2026/BR-0487",
+      "section": "SEC-106",
+      "dept": "ENGG",
+      "system": "TMS",
+      "activity": "LWR creep adjustment",
+      "description": "Destressing and creep adjustment of LWR at Km 262/0 (creep 38 mm).",
+      "requestedDate": "2026-09-20",
+      "requestedStart": "02:15",
+      "requestedEnd": "04:15",
+      "durationMin": 120,
+      "criticality": "LOW",
+      "urgency": "PLANNED",
+      "safetyImpact": "LOW",
+      "assetImpact": 28,
+      "assetImpactNote": "Preventive maintenance within tolerance",
+      "overdueDays": 0,
+      "status": "PENDING",
+      "requestedBy": "SSE/P.Way/ETW",
+      "requestedOn": "04 Sep 2026, 15:10",
+      "linkedDefects": [
+        "TMS-DF-2260"
+      ],
+      "compatibility": "COMPATIBLE",
+      "resources": "Gang 8",
+      "machinery": "Rail tensor",
+      "powerBlock": false,
+      "minDurationMin": 110,
+      "priority": {
+        "requestId": "BDMS/2026/BR-0487",
+        "urgency": 22,
+        "criticality": 22,
+        "priority": 22,
+        "band": "LOW",
+        "factors": [
+          {
+            "key": "criticality",
+            "label": "Criticality of activity",
+            "weight": 0.24,
+            "value": 28,
+            "contribution": 6.7,
+            "note": "LOW activity as classified by TMS"
+          },
+          {
+            "key": "urgency",
+            "label": "Urgency raised by department",
+            "weight": 0.2,
+            "value": 24,
+            "contribution": 4.8,
+            "note": "PLANNED — raised by SSE/P.Way/ETW"
+          },
+          {
+            "key": "safety",
+            "label": "Safety impact",
+            "weight": 0.16,
+            "value": 30,
+            "contribution": 4.8,
+            "note": "LOW safety consequence if deferred"
+          },
+          {
+            "key": "health",
+            "label": "Asset health deficit",
+            "weight": 0.14,
+            "value": 17,
+            "contribution": 2.4,
+            "note": "Section health 83% (deficit 17 pts)"
+          },
+          {
+            "key": "overdue",
+            "label": "Overdue status",
+            "weight": 0.14,
+            "value": 0,
+            "contribution": 0,
+            "note": "Within schedule"
+          },
+          {
+            "key": "availability",
+            "label": "Impact on asset availability",
+            "weight": 0.12,
+            "value": 28,
+            "contribution": 3.4,
+            "note": "28/100 — Preventive maintenance within tolerance"
+          }
+        ],
+        "explanation": {
+          "summary": "",
+          "featureContributions": []
+        },
+        "confidence": null
+      }
+    }
+  ],
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

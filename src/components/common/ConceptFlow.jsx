@@ -35,7 +35,7 @@ export default function ConceptFlow({ compact = false }) {
       <div className="flow-col">
         <div className="flow-engine">
           <div className="t">Automatic Block Planning Engine</div>
-          <div className="s">AI / ML scheduling</div>
+          <div className="s">Scoring + optimisation</div>
           <div className="row gap-4 mt-12" style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
             {ENGINE_STEPS.map((s) => (
               <span key={s} className="perm-pill" style={{ borderColor: 'rgba(224,161,58,0.35)', color: 'var(--accent)' }}>{s}</span>

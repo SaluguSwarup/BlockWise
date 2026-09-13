@@ -1,5 +1,7 @@
+import { Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { useApp } from './context/AppState.jsx';
+import { DEV_ROUTES } from './dev/index.jsx'; // R6 — empty in a production build, see src/dev/index.jsx
 import AppShell from './components/layout/AppShell.jsx';
 import Login from './pages/Login.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
@@ -67,6 +69,9 @@ export default function App() {
         <Route path="/app/engine" element={<AdminOnly><PlanningEnginePage /></AdminOnly>} />
         <Route path="/app/schedule" element={<AdminOnly><SchedulePage /></AdminOnly>} />
         <Route path="/app/operations" element={<AdminOnly><OperationsPage /></AdminOnly>} />
+        {DEV_ROUTES.map(({ path, Component }) => (
+          <Route key={path} path={path} element={<Suspense fallback={null}><Component /></Suspense>} />
+        ))}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Toast />

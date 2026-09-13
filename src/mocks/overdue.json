@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "task": "Through rail renewal (380 m)",
+      "dept": "ENGG",
+      "dueOn": "15 Aug 2026",
+      "overdueDays": 22,
+      "system": "TMS",
+      "section": "SEC-104",
+      "sectionName": "Aligarh Jn - Tundla Jn",
+      "corridor": "GC-1"
+    },
+    {
+      "task": "Point machine 24A overhaul",
+      "dept": "SNT",
+      "dueOn": "25 Aug 2026",
+      "overdueDays": 12,
+      "system": "SMMS",
+      "section": "SEC-104",
+      "sectionName": "Aligarh Jn - Tundla Jn",
+      "corridor": "GC-1"
+    },
+    {
+      "task": "Rail grinding cycle (GMT based)",
+      "dept": "ENGG",
+      "dueOn": "28 Aug 2026",
+      "overdueDays": 9,
+      "system": "TMS",
+      "section": "SEC-203",
+      "sectionName": "Gurgaon - Rewari Jn",
+      "corridor": "NW-2"
+    },
+    {
+      "task": "Complete tamping cycle",
+      "dept": "ENGG",
+      "dueOn": "21 Aug 2026",
+      "overdueDays": 16,
+      "system": "TMS",
+      "section": "SEC-204",
+      "sectionName": "Rewari Jn - Alwar Jn",
+      "corridor": "NW-2"
+    },
+    {
+      "task": "OHE dropper renewal (1.2 km)",
+      "dept": "TRD",
+      "dueOn": "26 Aug 2026",
+      "overdueDays": 11,
+      "system": "TDMS",
+      "section": "SEC-204",
+      "sectionName": "Rewari Jn - Alwar Jn",
+      "corridor": "NW-2"
+    },
+    {
+      "task": "Signal cable replacement (800 m)",
+      "dept": "SNT",
+      "dueOn": "18 Aug 2026",
+      "overdueDays": 19,
+      "system": "SMMS",
+      "section": "SEC-302",
+      "sectionName": "Hapur Jn - Gajraula Jn",
+      "corridor": "NE-3"
+    },
+    {
+      "task": "Neutral section assembly overhaul",
+      "dept": "TRD",
+      "dueOn": "29 Aug 2026",
+      "overdueDays": 8,
+      "system": "TDMS",
+      "section": "SEC-404",
+      "sectionName": "Morena - Gwalior Jn",
+      "corridor": "SC-4"
+    }
+  ],
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

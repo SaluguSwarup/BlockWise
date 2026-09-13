@@ -50,7 +50,7 @@ export default function BlockDetail({ block, onClose }) {
   if (!block) return null;
   const track = TRACK_BY_ID[block.section];
   const corridor = CORRIDOR_BY_ID[block.corridor];
-  const isAI = block.source === 'AI-OPTIMISED';
+  const isAI = block.source === 'OPTIMISED'; // not "AI-OPTIMISED" — see packages/contracts/docs/scoring.md
   const totalTrains = block.trainsAffected
     ?? block.trains.express + block.trains.passenger + block.trains.goods;
   // Sanctioned blocks carry no engine-evaluated window, so fall back to the
@@ -65,7 +65,7 @@ export default function BlockDetail({ block, onClose }) {
             <div className="row gap-8">
               <span className="mono" style={{ fontSize: 16, fontWeight: 700 }}>{block.id}</span>
               <Badge>{block.state}</Badge>
-              {isAI && <Badge tone="ok" dot>AI-OPTIMISED</Badge>}
+              {isAI && <Badge tone="ok" dot>OPTIMISED</Badge>}
               {block.merged && <Badge tone="ok">MULTI-DEPARTMENT</Badge>}
             </div>
             <div style={{ fontSize: 13, marginTop: 3 }}>

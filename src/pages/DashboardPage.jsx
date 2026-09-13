@@ -11,7 +11,6 @@ import { Badge, DeptTag, HealthBar, HealthValue, Icon, Panel, Stat } from '../co
 import { BarList, DonutChart, HealthHistogram, UtilisationChart } from '../components/dashboard/Charts.jsx';
 import ConceptFlow from '../components/common/ConceptFlow.jsx';
 import { formatDate } from '../lib/format.js';
-import { scoreRequest } from '../lib/planningEngine.js';
 
 export default function DashboardPage() {
   const { isAdmin, requests, tickets, planBlocks, planResult, user } = useApp();
@@ -39,8 +38,10 @@ export default function DashboardPage() {
   }, [requests]);
 
   const priorityBars = useMemo(() => {
+    // r.priority is the baked ScoringOutput score record (src/mocks/requests.json — R3); this
+    // screen never computes a score itself.
     const counts = { CRITICAL: 0, HIGH: 0, MEDIUM: 0, LOW: 0 };
-    requests.forEach((r) => { counts[scoreRequest(r).band] += 1; });
+    requests.forEach((r) => { counts[r.priority.band] += 1; });
     return [
       { label: 'CRITICAL', value: counts.CRITICAL, color: '#d9534f' },
       { label: 'HIGH', value: counts.HIGH, color: '#d99a2b' },
@@ -111,7 +112,7 @@ export default function DashboardPage() {
         {isAdmin ? (
           <>
             <Stat tone="accent" label="Pending block requests" value={stats.pendingReq} foot="Awaiting selection in BDMS" />
-            <Stat tone="info" label="Scheduled blocks" value={stats.scheduled} foot="Sanctioned + AI-proposed" />
+            <Stat tone="info" label="Scheduled blocks" value={stats.scheduled} foot="Sanctioned + optimised" />
             <Stat tone="ok" label="Infrastructure availability" value={stats.availability.toFixed(1)} unit="%" foot={`Target ${DIVISION_KPI.targetAvailability}%`} />
             <Stat tone="accent" label="Block hours saved" value={savedHours} unit=" hr" foot={planResult ? 'From the last optimisation run' : 'Month to date'} />
           </>
@@ -141,7 +142,7 @@ export default function DashboardPage() {
           <HealthHistogram tracks={TRACKS} />
         </Panel>
 
-        <Panel title="Block requests by AI priority" icon="engine"
+        <Panel title="Block requests by priority" icon="engine"
           right={<span className="tiny dim">scored by the planning engine</span>}>
           <BarList rows={priorityBars} />
           <div className="tiny dim mt-12">

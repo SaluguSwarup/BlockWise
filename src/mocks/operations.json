@@ -1,0 +1,324 @@
+{
+  "ok": true,
+  "data": {
+    "timetable": {
+      "GC-1": [
+        {
+          "no": "12002",
+          "name": "Bhopal Shatabdi",
+          "type": "EXPRESS",
+          "time": "06:15",
+          "dir": "DN",
+          "halts": "Runs through"
+        },
+        {
+          "no": "12280",
+          "name": "Taj Express",
+          "type": "EXPRESS",
+          "time": "07:10",
+          "dir": "DN",
+          "halts": "ALJN 2 min"
+        },
+        {
+          "no": "12310",
+          "name": "Rajdhani Express",
+          "type": "EXPRESS",
+          "time": "23:40",
+          "dir": "UP",
+          "halts": "Runs through"
+        },
+        {
+          "no": "12312",
+          "name": "Kalka Mail",
+          "type": "EXPRESS",
+          "time": "00:25",
+          "dir": "UP",
+          "halts": "TDL 5 min"
+        },
+        {
+          "no": "14163",
+          "name": "Sangam Express",
+          "type": "EXPRESS",
+          "time": "01:05",
+          "dir": "DN",
+          "halts": "ALJN 3 min"
+        },
+        {
+          "no": "64551",
+          "name": "ALJN–TDL MEMU",
+          "type": "PASSENGER",
+          "time": "04:45",
+          "dir": "DN",
+          "halts": "All stations"
+        },
+        {
+          "no": "64554",
+          "name": "TDL–ALJN MEMU",
+          "type": "PASSENGER",
+          "time": "05:20",
+          "dir": "UP",
+          "halts": "All stations"
+        },
+        {
+          "no": "GDS-4412",
+          "name": "BOXN Coal Rake",
+          "type": "GOODS",
+          "time": "02:10",
+          "dir": "DN",
+          "halts": "Loop at KRJ"
+        },
+        {
+          "no": "GDS-4418",
+          "name": "Container Rake",
+          "type": "GOODS",
+          "time": "03:35",
+          "dir": "UP",
+          "halts": "Runs through"
+        },
+        {
+          "no": "GDS-4425",
+          "name": "BCN Cement Rake",
+          "type": "GOODS",
+          "time": "05:05",
+          "dir": "DN",
+          "halts": "Loop at ALJN"
+        }
+      ],
+      "NW-2": [
+        {
+          "no": "12958",
+          "name": "Swarna Jayanti Rajdhani",
+          "type": "EXPRESS",
+          "time": "23:10",
+          "dir": "DN",
+          "halts": "Runs through"
+        },
+        {
+          "no": "12015",
+          "name": "Ajmer Shatabdi",
+          "type": "EXPRESS",
+          "time": "06:05",
+          "dir": "DN",
+          "halts": "AWR 2 min"
+        },
+        {
+          "no": "19708",
+          "name": "Aravali Express",
+          "type": "EXPRESS",
+          "time": "03:50",
+          "dir": "UP",
+          "halts": "RE 5 min"
+        },
+        {
+          "no": "54413",
+          "name": "Rewari–Alwar Passenger",
+          "type": "PASSENGER",
+          "time": "05:40",
+          "dir": "DN",
+          "halts": "All stations"
+        },
+        {
+          "no": "GDS-6620",
+          "name": "BTPN Tank Rake",
+          "type": "GOODS",
+          "time": "01:20",
+          "dir": "DN",
+          "halts": "Loop at RE"
+        },
+        {
+          "no": "GDS-6631",
+          "name": "DFC Feeder Container",
+          "type": "GOODS",
+          "time": "02:45",
+          "dir": "UP",
+          "halts": "Runs through"
+        },
+        {
+          "no": "GDS-6640",
+          "name": "BOXN Stone Rake",
+          "type": "GOODS",
+          "time": "04:15",
+          "dir": "DN",
+          "halts": "Loop at AWR"
+        }
+      ],
+      "NE-3": [
+        {
+          "no": "12040",
+          "name": "Kathgodam Shatabdi",
+          "type": "EXPRESS",
+          "time": "06:30",
+          "dir": "DN",
+          "halts": "MB 5 min"
+        },
+        {
+          "no": "15035",
+          "name": "Uttarakhand Express",
+          "type": "EXPRESS",
+          "time": "00:50",
+          "dir": "DN",
+          "halts": "GJL 2 min"
+        },
+        {
+          "no": "14315",
+          "name": "Bareilly Intercity",
+          "type": "EXPRESS",
+          "time": "05:15",
+          "dir": "UP",
+          "halts": "RMU 2 min"
+        },
+        {
+          "no": "64207",
+          "name": "GZB–MB MEMU",
+          "type": "PASSENGER",
+          "time": "04:55",
+          "dir": "DN",
+          "halts": "All stations"
+        },
+        {
+          "no": "GDS-7712",
+          "name": "BCN Foodgrain Rake",
+          "type": "GOODS",
+          "time": "02:25",
+          "dir": "DN",
+          "halts": "Loop at HPU"
+        },
+        {
+          "no": "GDS-7720",
+          "name": "BOXN Empty Rake",
+          "type": "GOODS",
+          "time": "03:55",
+          "dir": "UP",
+          "halts": "Runs through"
+        }
+      ],
+      "SC-4": [
+        {
+          "no": "12050",
+          "name": "Gatimaan Express",
+          "type": "EXPRESS",
+          "time": "08:10",
+          "dir": "DN",
+          "halts": "Runs through"
+        },
+        {
+          "no": "12621",
+          "name": "Tamil Nadu Express",
+          "type": "EXPRESS",
+          "time": "23:55",
+          "dir": "DN",
+          "halts": "AGC 5 min"
+        },
+        {
+          "no": "12615",
+          "name": "Grand Trunk Express",
+          "type": "EXPRESS",
+          "time": "01:35",
+          "dir": "UP",
+          "halts": "GWL 5 min"
+        },
+        {
+          "no": "11078",
+          "name": "Jhelum Express",
+          "type": "EXPRESS",
+          "time": "03:20",
+          "dir": "DN",
+          "halts": "DHO 2 min"
+        },
+        {
+          "no": "51886",
+          "name": "Agra–Gwalior Passenger",
+          "type": "PASSENGER",
+          "time": "05:30",
+          "dir": "DN",
+          "halts": "All stations"
+        },
+        {
+          "no": "GDS-8814",
+          "name": "BOXN Coal Rake",
+          "type": "GOODS",
+          "time": "02:05",
+          "dir": "UP",
+          "halts": "Loop at DHO"
+        },
+        {
+          "no": "GDS-8822",
+          "name": "BCN Cement Rake",
+          "type": "GOODS",
+          "time": "04:30",
+          "dir": "DN",
+          "halts": "Loop at MRA"
+        }
+      ]
+    },
+    "goodsForecast": {
+      "GC-1": {
+        "rakesPerNight": 11,
+        "tonnage": "46,200 T",
+        "trend": "up",
+        "peakHours": "02:00 – 04:00",
+        "note": "Coal rakes to NTPC Dadri; DFC transfer traffic",
+        "priorityRakes": 3
+      },
+      "NW-2": {
+        "rakesPerNight": 14,
+        "tonnage": "58,800 T",
+        "trend": "up",
+        "peakHours": "00:30 – 03:00",
+        "note": "Stone / cement traffic ex-Alwar; heavy loading",
+        "priorityRakes": 4
+      },
+      "NE-3": {
+        "rakesPerNight": 6,
+        "tonnage": "24,600 T",
+        "trend": "flat",
+        "peakHours": "02:00 – 04:00",
+        "note": "Foodgrain rakes to Bareilly; light density",
+        "priorityRakes": 1
+      },
+      "SC-4": {
+        "rakesPerNight": 9,
+        "tonnage": "39,400 T",
+        "trend": "down",
+        "peakHours": "01:30 – 04:30",
+        "note": "Coal to Gwalior; reduced due to Br. 88 restriction",
+        "priorityRakes": 2
+      }
+    },
+    "corridorStatus": [
+      {
+        "corridor": "GC-1",
+        "punctuality": 91.4,
+        "sectionsBlocked": 0,
+        "trainsRunning": 42,
+        "controllerNote": "Normal working"
+      },
+      {
+        "corridor": "NW-2",
+        "punctuality": 87.2,
+        "sectionsBlocked": 0,
+        "trainsRunning": 26,
+        "controllerNote": "Goods regulation at Rewari"
+      },
+      {
+        "corridor": "NE-3",
+        "punctuality": 94.1,
+        "sectionsBlocked": 0,
+        "trainsRunning": 18,
+        "controllerNote": "Normal working"
+      },
+      {
+        "corridor": "SC-4",
+        "punctuality": 78.6,
+        "sectionsBlocked": 1,
+        "trainsRunning": 31,
+        "controllerNote": "Br. 88 block — 18 trains diverted"
+      }
+    ]
+  },
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

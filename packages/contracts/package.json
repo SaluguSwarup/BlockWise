@@ -1,0 +1,9 @@
+{
+  "name": "@blockwise/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BlockWise frozen cross-team contracts: response envelope, record shapes, PlanningInput/Output, ScoringInput/Output, plus zero-dependency validators.",
+  "main": "src/index.js",
+  "dependencies": {}
+}

@@ -1,0 +1,110 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "section": "SEC-101",
+      "health": 88,
+      "history": []
+    },
+    {
+      "section": "SEC-102",
+      "health": 74,
+      "history": []
+    },
+    {
+      "section": "SEC-103",
+      "health": 91,
+      "history": []
+    },
+    {
+      "section": "SEC-104",
+      "health": 48,
+      "history": []
+    },
+    {
+      "section": "SEC-105",
+      "health": 67,
+      "history": []
+    },
+    {
+      "section": "SEC-106",
+      "health": 83,
+      "history": []
+    },
+    {
+      "section": "SEC-201",
+      "health": 93,
+      "history": []
+    },
+    {
+      "section": "SEC-202",
+      "health": 79,
+      "history": []
+    },
+    {
+      "section": "SEC-203",
+      "health": 71,
+      "history": []
+    },
+    {
+      "section": "SEC-204",
+      "health": 57,
+      "history": []
+    },
+    {
+      "section": "SEC-205",
+      "health": 86,
+      "history": []
+    },
+    {
+      "section": "SEC-301",
+      "health": 81,
+      "history": []
+    },
+    {
+      "section": "SEC-302",
+      "health": 64,
+      "history": []
+    },
+    {
+      "section": "SEC-303",
+      "health": 76,
+      "history": []
+    },
+    {
+      "section": "SEC-304",
+      "health": 89,
+      "history": []
+    },
+    {
+      "section": "SEC-305",
+      "health": 72,
+      "history": []
+    },
+    {
+      "section": "SEC-401",
+      "health": 95,
+      "history": []
+    },
+    {
+      "section": "SEC-402",
+      "health": 53,
+      "history": []
+    },
+    {
+      "section": "SEC-403",
+      "health": 84,
+      "history": []
+    },
+    {
+      "section": "SEC-404",
+      "health": 69,
+      "history": []
+    }
+  ],
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

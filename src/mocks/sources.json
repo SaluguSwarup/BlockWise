@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "code": "TMS",
+      "name": "Track Management System",
+      "dept": "Engineering",
+      "records": 1284,
+      "lastSync": "06 Sep 2026, 09:42",
+      "status": "CONNECTED"
+    },
+    {
+      "code": "SMMS",
+      "name": "Signalling Maintenance & Mgmt System",
+      "dept": "S&T",
+      "records": 876,
+      "lastSync": "06 Sep 2026, 09:38",
+      "status": "CONNECTED"
+    },
+    {
+      "code": "TDMS",
+      "name": "Traction Distribution Mgmt System",
+      "dept": "Traction",
+      "records": 642,
+      "lastSync": "06 Sep 2026, 09:40",
+      "status": "CONNECTED"
+    },
+    {
+      "code": "COA",
+      "name": "Control Office Application",
+      "dept": "Operating",
+      "records": 2310,
+      "lastSync": "06 Sep 2026, 09:44",
+      "status": "CONNECTED"
+    },
+    {
+      "code": "BDMS",
+      "name": "Block Demand Management System",
+      "dept": "All",
+      "records": 118,
+      "lastSync": "06 Sep 2026, 09:35",
+      "status": "CONNECTED"
+    }
+  ],
+  "error": null,
+  "meta": {
+    "generatedBy": "scripts/build-fixtures.mjs",
+    "frozen": true
+  }
+}

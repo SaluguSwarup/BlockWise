@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppState.jsx';
 import { REQUEST_STATUS } from '../data/blockRequests.js';
 import { DEPARTMENTS, TRACK_BY_ID } from '../data/tracks.js';
-import { scoreRequest } from '../lib/planningEngine.js';
 import { formatDate, formatDuration } from '../lib/format.js';
 import { Badge, DeptTag, HealthValue, Icon, Panel, ScorePill, Stat } from '../components/common/UI.jsx';
 import RequestDetail from '../components/planning/RequestDetail.jsx';
@@ -17,8 +16,10 @@ export default function BlockRequestsPage() {
   const [query, setQuery] = useState('');
   const [sortBy, setSortBy] = useState('score');
 
+  // r.priority is the baked ScoringOutput score record (src/mocks/requests.json — R3); this
+  // screen never computes a score itself. See packages/contracts/docs/scoring.md.
   const scored = useMemo(
-    () => requests.map((r) => ({ ...r, ai: scoreRequest(r) })),
+    () => requests.map((r) => ({ ...r, ai: { score: r.priority.priority, band: r.priority.band } })),
     [requests],
   );
 
@@ -154,7 +155,7 @@ export default function BlockRequestsPage() {
               {Object.values(REQUEST_STATUS).map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
             <select className="select" style={{ width: 150, padding: '5px 9px' }} value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-              <option value="score">Sort: AI priority</option>
+              <option value="score">Sort: priority</option>
               <option value="date">Sort: requested date</option>
               <option value="section">Sort: section</option>
             </select>
@@ -168,7 +169,7 @@ export default function BlockRequestsPage() {
               <th style={{ width: 34 }} />
               <th>Request ID</th><th>Section</th><th>Dept</th><th>Maintenance activity</th>
               <th>Requested</th><th>Duration</th><th>Criticality</th><th>Urgency</th>
-              <th>Asset impact</th><th>AI priority</th><th>Status</th><th />
+              <th>Asset impact</th><th>Priority</th><th>Status</th><th />
             </tr>
           </thead>
           <tbody>

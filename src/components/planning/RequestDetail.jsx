@@ -3,7 +3,6 @@ import { TRACK_BY_ID, DEPARTMENTS, healthLabel } from '../../data/tracks.js';
 import { CORRIDOR_BY_ID } from '../../data/network.js';
 import { GOODS_FORECAST, getWindowsForSection, trainsInWindow } from '../../data/trains.js';
 import { REQUEST_STATUS } from '../../data/blockRequests.js';
-import { scoreRequest } from '../../lib/planningEngine.js';
 import { formatDate, formatDuration } from '../../lib/format.js';
 import { Badge, CloseButton, DeptTag, Drawer, HealthBar, HealthValue, Icon, KV, ScorePill, Callout } from '../common/UI.jsx';
 
@@ -20,7 +19,7 @@ export function PriorityFactors({ ai }) {
         </div>
       ))}
       <div className="dl-row" style={{ marginTop: 6, borderTop: '1px solid var(--line)', paddingTop: 8 }}>
-        <span className="k">Weighted AI priority score</span>
+        <span className="k">Weighted priority score</span>
         <span className="v"><ScorePill score={ai.score} band={ai.band} /></span>
       </div>
     </div>
@@ -30,7 +29,11 @@ export function PriorityFactors({ ai }) {
 export default function RequestDetail({ request, requests, onClose, onApprove, onReject }) {
   const track = request ? TRACK_BY_ID[request.section] : null;
 
-  const ai = useMemo(() => (request ? scoreRequest(request) : null), [request]);
+  // request.priority is the baked ScoringOutput score record (src/mocks/requests.json — R3);
+  // this component never computes a score itself. See packages/contracts/docs/scoring.md.
+  const ai = useMemo(() => (request?.priority
+    ? { score: request.priority.priority, band: request.priority.band, factors: request.priority.factors }
+    : null), [request]);
 
   const related = useMemo(() => {
     if (!request) return [];
@@ -67,7 +70,7 @@ export default function RequestDetail({ request, requests, onClose, onApprove, o
           </div>
           <span className="spacer" />
           <div className="right">
-            <div className="tiny dim">AI PRIORITY</div>
+            <div className="tiny dim">PRIORITY</div>
             <ScorePill score={ai.score} band={ai.band} />
           </div>
           <CloseButton onClick={onClose} />
@@ -130,7 +133,7 @@ export default function RequestDetail({ request, requests, onClose, onApprove, o
         <div style={{ fontSize: 12.5 }}>{request.description}</div>
 
         <div className="divider" />
-        <div className="section-label mb-8">AI prioritisation — how this score was reached</div>
+        <div className="section-label mb-8">Prioritisation — how this score was reached</div>
         <PriorityFactors ai={ai} />
 
         <div className="divider" />
